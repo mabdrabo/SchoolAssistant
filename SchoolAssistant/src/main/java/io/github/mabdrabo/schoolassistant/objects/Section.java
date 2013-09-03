@@ -11,7 +11,7 @@ public class Section {
     private int _courseId;
     private String _place;
     private int _day;
-    private long _time;
+    private int _time;
 
 
     public Section(String _place) {
@@ -59,11 +59,11 @@ public class Section {
         this._day = _day;
     }
 
-    public long get_time() {
+    public int get_time() {
         return _time;
     }
 
-    public void set_time(long _time) {
+    public void set_time(int _time) {
         this._time = _time;
     }
 

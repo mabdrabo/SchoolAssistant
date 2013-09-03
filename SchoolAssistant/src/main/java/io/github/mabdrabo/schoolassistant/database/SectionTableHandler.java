@@ -67,7 +67,7 @@ public class SectionTableHandler {
         section.set_id(Integer.parseInt(cursor.getString(0)));
         section.set_courseId(Integer.parseInt(cursor.getString(1)));
         section.set_day(Integer.parseInt(cursor.getString(3)));
-        section.set_time(Long.parseLong(cursor.getString(4)));
+        section.set_time(Integer.parseInt(cursor.getString(4)));
         cursor.close();
 
         return section;
@@ -99,7 +99,7 @@ public class SectionTableHandler {
                 section.set_id(Integer.parseInt(cursor.getString(0)));
                 section.set_courseId(Integer.parseInt(cursor.getString(1)));
                 section.set_day(Integer.parseInt(cursor.getString(3)));
-                section.set_time(Long.parseLong(cursor.getString(4)));
+                section.set_time(Integer.parseInt(cursor.getString(4)));
 
                 // Adding Section to list
                 sectionList.add(section);

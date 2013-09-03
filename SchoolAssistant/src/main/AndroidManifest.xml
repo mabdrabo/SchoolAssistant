@@ -25,18 +25,18 @@
         <activity
             android:name=".activities.CoursesActivity"
             android:label="@string/title_activity_courses"
-            android:parentActivityName="io.github.mabdrabo.schoolassistant.MainActivity">
+            android:parentActivityName=".activities.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="io.github.mabdrabo.schoolassistant.MainActivity" />
+                android:value=".activities.MainActivity" />
         </activity>
         <activity
             android:name=".activities.CourseActivity"
             android:label="@string/title_activity_course"
-            android:parentActivityName="io.github.mabdrabo.schoolassistant.CoursesActivity">
+            android:parentActivityName=".activities.CoursesActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="io.github.mabdrabo.schoolassistant.CoursesActivity" />
+                android:value=".activities.CoursesActivity" />
         </activity>
     </application>
 

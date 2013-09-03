@@ -1,14 +1,20 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="io.mabdrabo.schoolassistant">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="io.github.mabdrabo.schoolassistant">
 
     <uses-sdk android:minSdkVersion="7" android:targetSdkVersion="16"/>
 
     <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:theme="@style/AppTheme">
-        <activity android:label="@string/app_name" android:name="io.mabdrabo.schoolassistant.MainActivity">
+        <activity android:label="@string/app_name" android:name="io.github.mabdrabo.schoolassistant.activities.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
+        </activity>
+        <activity android:label="@string/title_activity_courses" android:name="io.github.mabdrabo.schoolassistant.activities.CoursesActivity" android:parentActivityName=".activities.MainActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".activities.MainActivity"/>
+        </activity>
+        <activity android:label="@string/title_activity_course" android:name="io.github.mabdrabo.schoolassistant.activities.CourseActivity" android:parentActivityName=".activities.CoursesActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".activities.CoursesActivity"/>
         </activity>
     </application>
 

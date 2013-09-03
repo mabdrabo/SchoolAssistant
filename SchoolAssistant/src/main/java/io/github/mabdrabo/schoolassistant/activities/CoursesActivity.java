@@ -1,6 +1,7 @@
 package io.github.mabdrabo.schoolassistant.activities;
 
 import android.app.Activity;
+import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.NavUtils;
@@ -8,6 +9,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 
@@ -58,7 +61,7 @@ public class CoursesActivity extends Activity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-//        getMenuInflater().inflate(R.menu.courses, menu);
+        getMenuInflater().inflate(R.menu.courses, menu);
         return true;
     }
 
@@ -67,14 +70,10 @@ public class CoursesActivity extends Activity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case android.R.id.home:
-                // This ID represents the Home or Up button. In the case of this
-                // activity, the Up button is shown. Use NavUtils to allow users
-                // to navigate up one level in the application structure. For
-                // more details, see the Navigation pattern on Android Design:
-                //
-                // http://developer.android.com/design/patterns/navigation.html#up-vs-back
-                //
                 NavUtils.navigateUpFromSameTask(this);
+                return true;
+            case R.id.action_add_course:
+                addCourse();
                 return true;
         }
         return super.onOptionsItemSelected(item);
@@ -85,6 +84,7 @@ public class CoursesActivity extends Activity {
     protected void onResume() {
         super.onResume();
         courses = MainActivity.database.getAllCourses();
+        coursesList = new ArrayList<HashMap<String, String>>();
         for (Course course : courses) {
             HashMap<String, String> datum = new HashMap<String, String>(2);
             datum.put("main", course.get_name());
@@ -96,5 +96,25 @@ public class CoursesActivity extends Activity {
                 new String[]{"main", "sub"},
                 new int[]{android.R.id.text1, android.R.id.text2});
         coursesListView.setAdapter(adapter);
+    }
+
+    private void addCourse() {
+        final Dialog addCourseDialog = new Dialog(this);
+        addCourseDialog.setTitle("Add Course");
+        addCourseDialog.setContentView(R.layout.add_course_dialog);
+        addCourseDialog.show();
+
+        Button addCourseButton = (Button) addCourseDialog.findViewById(R.id.addCourseButton);
+        addCourseButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String name = "" + ((EditText) addCourseDialog.findViewById(R.id.courseNameEditText)).getText();
+//                String code = "";
+                Course course = new Course(name);
+                MainActivity.database.addCourse(course);
+                addCourseDialog.dismiss();
+                onResume();
+            }
+        });
     }
 }

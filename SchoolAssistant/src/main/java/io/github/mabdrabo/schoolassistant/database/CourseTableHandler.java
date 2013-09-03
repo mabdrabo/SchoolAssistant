@@ -54,7 +54,6 @@ public class CourseTableHandler {
     public static Course get(int course_id) {
         SQLiteDatabase db = dbHandler.getReadableDatabase();
         Cursor cursor = db.query(TABLE_COURSES, null, KEY_ID + "=?", new String[]{String.valueOf(course_id)}, null, null, null);
-        ArrayList<Course> courseList = new ArrayList<Course>();
 
         if (cursor != null && cursor.getCount() > 0) {
             cursor.moveToFirst();
@@ -64,10 +63,9 @@ public class CourseTableHandler {
 
             cursor.close();
             return course;
-        } else {
-            cursor.close();
-            return null;
         }
+        cursor.close();
+        return null;
     }
 
     public static void update(Course course) {
@@ -93,12 +91,9 @@ public class CourseTableHandler {
                 // Adding Course to list
                 courseList.add(course);
             } while (cursor.moveToNext());
-            cursor.close();
-            return courseList;
-        } else {
-            cursor.close();
-            return null;
         }
+        cursor.close();
+        return courseList;
     }
 
     public static ArrayList<Section> getSections(int course_id) {
