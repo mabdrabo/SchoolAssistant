@@ -1,26 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="io.mabdrabo.schoolassistant"
+    package="io.github.mabdrabo.schoolassistant"
     android:versionCode="1"
-    android:versionName="1.0" >
+    android:versionName="1.0">
 
     <uses-sdk
-        android:minSdkVersion="7"
+        android:minSdkVersion="14"
         android:targetSdkVersion="16" />
 
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme">
         <activity
-            android:name="io.mabdrabo.schoolassistant.MainActivity"
-            android:label="@string/app_name" >
+            android:name="io.github.mabdrabo.schoolassistant.MainActivity"
+            android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name="io.github.mabdrabo.schoolassistant.CoursesActivity"
+            android:label="@string/title_activity_courses"
+            android:parentActivityName="io.github.mabdrabo.schoolassistant.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="io.github.mabdrabo.schoolassistant.MainActivity" />
+        </activity>
+        <activity
+            android:name="io.github.mabdrabo.schoolassistant.CourseActivity"
+            android:label="@string/title_activity_course"
+            android:parentActivityName="io.github.mabdrabo.schoolassistant.CoursesActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="io.github.mabdrabo.schoolassistant.CoursesActivity" />
         </activity>
     </application>
 

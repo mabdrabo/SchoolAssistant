@@ -10,8 +10,43 @@
       <config />
     </shared>
   </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="21152" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="f248c8b8-af67-4859-a2c1-e9a8a1beaf95" name="Default" comment="" />
+    <list default="true" id="f248c8b8-af67-4859-a2c1-e9a8a1beaf95" name="Default" comment="database">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/Assignment.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/AssignmentTableHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/Course.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/CourseActivity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/CourseTableHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/CoursesActivity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/DatabaseHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/ExpandableListAdapter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/Note.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/NoteTableHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/Project.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/ProjectTableHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/Quiz.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/QuizTableHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/Section.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/SectionTableHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SchoolAssistant/src/main/res/layout/activity_course.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SchoolAssistant/src/main/res/layout/activity_courses.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SchoolAssistant/src/main/res/menu/course.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SchoolAssistant/src/main/res/menu/courses.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SchoolAssistant/src/main/res/layout/list_child.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SchoolAssistant/src/main/res/layout/list_group.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SchoolAssistant/build/source/buildConfig/debug/io/mabdrabo/schoolassistant/BuildConfig.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SchoolAssistant/build/source/r/debug/io/mabdrabo/schoolassistant/R.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/mabdrabo/schoolassistant/MainActivity.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SchoolAssistant/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/SchoolAssistant/src/main/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SchoolAssistant/build/res/all/debug/layout/activity_main.xml" afterPath="$PROJECT_DIR$/SchoolAssistant/build/res/all/debug/layout/activity_main.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SchoolAssistant/src/main/res/layout/activity_main.xml" afterPath="$PROJECT_DIR$/SchoolAssistant/src/main/res/layout/activity_main.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SchoolAssistant/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/SchoolAssistant/src/main/res/values/strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SchoolAssistant/build/res/all/debug/values/values.xml" afterPath="$PROJECT_DIR$/SchoolAssistant/build/res/all/debug/values/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="SchoolAssistant.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -74,22 +109,73 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="activity_main.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SchoolAssistant/src/main/res/layout/activity_main.xml">
+      <file leaf-file-name="CoursesActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/CoursesActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="330">
+            <state line="88" column="35" selection-start="3016" selection-end="3016" vertical-scroll-proportion="0.0" vertical-offset="435" max-vertical-offset="1035">
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#1130#1497#0" expanded="true" />
+                <element signature="e#1486#1487#0" expanded="true" />
+                <element signature="method#setupActionBar#0;class#CoursesActivity#0" expanded="false" />
+                <element signature="method#onCreateOptionsMenu#0;class#CoursesActivity#0" expanded="false" />
+                <element signature="method#onOptionsItemSelected#0;class#CoursesActivity#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CourseActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/CourseActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="89" column="45" selection-start="3043" selection-end="3043" vertical-scroll-proportion="0.0" vertical-offset="599" max-vertical-offset="1230">
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="method#setupActionBar#0;class#CourseActivity#0" expanded="false" />
+                <element signature="method#onCreateOptionsMenu#0;class#CourseActivity#0" expanded="false" />
+                <element signature="method#onOptionsItemSelected#0;class#CourseActivity#0" expanded="false" />
+                <element signature="e#2705#2713#0" expanded="true" />
+                <element signature="e#3054#3062#0" expanded="true" />
+                <element signature="e#3131#3153#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DatabaseHandler.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/DatabaseHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="73" column="30" selection-start="2533" selection-end="2533" vertical-scroll-proportion="0.0" vertical-offset="949" max-vertical-offset="1365">
               <folding />
             </state>
           </provider>
-          <provider editor-type-id="android-designer">
-            <state />
+        </entry>
+      </file>
+      <file leaf-file-name="SectionTableHandler.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/SectionTableHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="86" column="43" selection-start="3212" selection-end="3212" vertical-scroll-proportion="0.0" vertical-offset="1141" max-vertical-offset="1740">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#3328#3337#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Section.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/Section.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="0" selection-start="306" selection-end="306" vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="1110">
+              <folding />
+            </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="MainActivity.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/SchoolAssistant/src/main/java/io/mabdrabo/schoolassistant/MainActivity.java">
+        <entry file="file://$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="0" selection-start="572" selection-end="572" vertical-scroll-proportion="0.52587646" vertical-offset="0" max-vertical-offset="599">
+            <state line="33" column="27" selection-start="1247" selection-end="1247" vertical-scroll-proportion="0.56997454" vertical-offset="211" max-vertical-offset="915">
               <folding />
             </state>
           </provider>
@@ -139,6 +225,28 @@
       <map>
         <entry key="$PROJECT_DIR$" value="1378154521000" />
       </map>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/ProjectTableHandler.java" />
+        <option value="$PROJECT_DIR$/SchoolAssistant/src/main/res/layout/fragment_courses_dummy.xml" />
+        <option value="$PROJECT_DIR$/SchoolAssistant/src/main/res/layout/activity_main.xml" />
+        <option value="$PROJECT_DIR$/SchoolAssistant/src/main/res/layout/activity_courses.xml" />
+        <option value="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/Section.java" />
+        <option value="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/CourseTableHandler.java" />
+        <option value="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/CoursesActivity.java" />
+        <option value="$PROJECT_DIR$/SchoolAssistant/src/main/res/layout/activity_course.xml" />
+        <option value="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/Course.java" />
+        <option value="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/DatabaseHandler.java" />
+        <option value="$PROJECT_DIR$/SchoolAssistant/src/main/res/layout/list_child.xml" />
+        <option value="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/ExpandableListAdapter.java" />
+        <option value="$PROJECT_DIR$/SchoolAssistant/src/main/res/layout/list_group.xml" />
+        <option value="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/MainActivity.java" />
+        <option value="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/SectionTableHandler.java" />
+        <option value="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/CourseActivity.java" />
+      </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
@@ -328,20 +436,96 @@
     <property name="options.lastSelected" value="preferences.sourceCode.Java" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="01b45ef3920d2be7" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="AVD_for_Nexus_4_by_Google" />
+    <property name="restartRequiresConfirmation" value="true" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
   </component>
-  <component name="RunManager" selected="Android Application.SchoolAssistant-SchoolAssistant">
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="io.github.mabdrabo.schoolassistant" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="io.github.mabdrabo.schoolassistant" />
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Android Application.SchoolAssistant">
+    <configuration default="false" name="SchoolAssistant" type="AndroidRunConfigurationType" factoryName="Android Application" temporary="true">
+      <module name="SchoolAssistant-SchoolAssistant" />
+      <option name="ACTIVITY_CLASS" value="io.github.mabdrabo.schoolassistant.CoursesActivity" />
+      <option name="MODE" value="default_activity" />
+      <option name="DEPLOY" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="USB_DEVICE" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <RunnerSettings RunnerId="AndroidDebugRunner" />
+      <ConfigurationWrapper RunnerId="AndroidDebugRunner" />
+      <method />
+    </configuration>
+    <configuration default="true" type="GroovyScriptRunConfiguration" factoryName="Groovy">
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="file://$PROJECT_DIR$" />
+      <setting name="debug" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="GriffonRunConfigurationType" factoryName="Griffon">
+      <module name="" />
+      <setting name="vmparams" value="" />
+      <setting name="cmdLine" value="run-app" />
+      <setting name="depsClasspath" value="true" />
+      <setting name="passParentEnv" value="true" />
+      <method />
+    </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="externalProjectPath" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
       <method />
     </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
@@ -396,23 +580,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <option name="MODE" value="default_activity" />
       <option name="DEPLOY" value="true" />
-      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
-      <option name="PREFERRED_AVD" value="" />
-      <option name="USE_COMMAND_LINE" value="true" />
-      <option name="COMMAND_LINE" value="" />
-      <option name="WIPE_USER_DATA" value="false" />
-      <option name="DISABLE_BOOT_ANIMATION" value="false" />
-      <option name="NETWORK_SPEED" value="full" />
-      <option name="NETWORK_LATENCY" value="none" />
-      <option name="CLEAR_LOGCAT" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="SchoolAssistant-SchoolAssistant" type="AndroidRunConfigurationType" factoryName="Android Application">
-      <module name="SchoolAssistant-SchoolAssistant" />
-      <option name="ACTIVITY_CLASS" value="" />
-      <option name="MODE" value="default_activity" />
-      <option name="DEPLOY" value="true" />
-      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="TARGET_SELECTION_MODE" value="USB_DEVICE" />
       <option name="PREFERRED_AVD" value="" />
       <option name="USE_COMMAND_LINE" value="true" />
       <option name="COMMAND_LINE" value="" />
@@ -424,8 +592,13 @@
       <method />
     </configuration>
     <list size="1">
-      <item index="0" class="java.lang.String" itemvalue="Android Application.SchoolAssistant-SchoolAssistant" />
+      <item index="0" class="java.lang.String" itemvalue="Android Application.SchoolAssistant" />
     </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="Android Application.SchoolAssistant" />
+      </list>
+    </recent_temporary>
     <configuration name="&lt;template&gt;" type="TestNG" default="true" selected="false">
       <option name="MAIN_CLASS_NAME" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -468,63 +641,66 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1280" height="747" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298217" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3006483" sideWeight="0.67145133" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32854864" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24959481" sideWeight="0.4274322" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32854864" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.46272284" sideWeight="0.67145133" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24959481" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24959481" sideWeight="0.57256776" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32820097" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24959481" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24959481" sideWeight="0.67145133" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32854864" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298217" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3006483" sideWeight="0.67145133" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32854864" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32854864" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.46272284" sideWeight="0.67145133" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
+  </component>
+  <component name="UpdateCopyrightCheckinHandler">
+    <option name="UPDATE_COPYRIGHT" value="true" />
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -533,14 +709,26 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
+    <MESSAGE value="objects" />
+    <MESSAGE value="database" />
+    <option name="LAST_COMMIT_MESSAGE" value="database" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/ProjectTableHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="0" selection-start="187" selection-end="187" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/SchoolAssistant/src/main/res/layout/activity_main.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
+        <state line="55" column="49" selection-start="1975" selection-end="1995" vertical-scroll-proportion="-10.074074" vertical-offset="553" max-vertical-offset="1365">
           <folding />
         </state>
       </provider>
@@ -548,9 +736,138 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SchoolAssistant/src/main/java/io/mabdrabo/schoolassistant/MainActivity.java">
+    <entry file="file://$PROJECT_DIR$/SchoolAssistant/src/main/res/layout/activity_courses.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="0" selection-start="572" selection-end="572" vertical-scroll-proportion="0.52587646" vertical-offset="0" max-vertical-offset="599">
+        <state line="14" column="40" selection-start="627" selection-end="627" vertical-scroll-proportion="-7.7777777" vertical-offset="0" max-vertical-offset="345">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/CourseTableHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="33" selection-start="728" selection-end="728" vertical-scroll-proportion="0.0" vertical-offset="61" max-vertical-offset="1845">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1570#1578#0" expanded="true" />
+            <element signature="e#2533#2541#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/Course.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="41" selection-start="238" selection-end="438" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1305">
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SchoolAssistant/src/main/res/layout/list_child.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="35" selection-start="433" selection-end="433" vertical-scroll-proportion="0.26223776" vertical-offset="0" max-vertical-offset="572">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/ExpandableListAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="79" selection-start="734" selection-end="734" vertical-scroll-proportion="0.3572621" vertical-offset="146" max-vertical-offset="1695">
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SchoolAssistant/src/main/res/layout/activity_course.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="49" selection-start="966" selection-end="990" vertical-scroll-proportion="-12.222222" vertical-offset="0" max-vertical-offset="510">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SchoolAssistant/src/main/res/layout/list_group.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="82" selection-start="488" selection-end="488" vertical-scroll-proportion="-5.5555553" vertical-offset="0" max-vertical-offset="300">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/DatabaseHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="73" column="30" selection-start="2533" selection-end="2533" vertical-scroll-proportion="0.0" vertical-offset="949" max-vertical-offset="1365">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SchoolAssistant/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="17" selection-start="506" selection-end="506" vertical-scroll-proportion="0.38395905" vertical-offset="0" max-vertical-offset="735">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/SectionTableHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="86" column="43" selection-start="3212" selection-end="3212" vertical-scroll-proportion="0.0" vertical-offset="1141" max-vertical-offset="1740">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3328#3337#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/Section.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="0" selection-start="306" selection-end="306" vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="1110">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/CoursesActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="88" column="35" selection-start="3016" selection-end="3016" vertical-scroll-proportion="0.0" vertical-offset="435" max-vertical-offset="1035">
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1130#1497#0" expanded="true" />
+            <element signature="e#1486#1487#0" expanded="true" />
+            <element signature="method#setupActionBar#0;class#CoursesActivity#0" expanded="false" />
+            <element signature="method#onCreateOptionsMenu#0;class#CoursesActivity#0" expanded="false" />
+            <element signature="method#onOptionsItemSelected#0;class#CoursesActivity#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/CourseActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="89" column="45" selection-start="3043" selection-end="3043" vertical-scroll-proportion="0.0" vertical-offset="599" max-vertical-offset="1230">
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="method#setupActionBar#0;class#CourseActivity#0" expanded="false" />
+            <element signature="method#onCreateOptionsMenu#0;class#CourseActivity#0" expanded="false" />
+            <element signature="method#onOptionsItemSelected#0;class#CourseActivity#0" expanded="false" />
+            <element signature="e#2705#2713#0" expanded="true" />
+            <element signature="e#3054#3062#0" expanded="true" />
+            <element signature="e#3131#3153#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="27" selection-start="1247" selection-end="1247" vertical-scroll-proportion="0.56997454" vertical-offset="211" max-vertical-offset="915">
           <folding />
         </state>
       </provider>
