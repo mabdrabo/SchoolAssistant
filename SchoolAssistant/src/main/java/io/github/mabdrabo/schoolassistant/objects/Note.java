@@ -1,18 +1,18 @@
-package io.github.mabdrabo.schoolassistant;
+package io.github.mabdrabo.schoolassistant.objects;
 
 /**
  * Created by mahmoud on 9/3/13.
  */
-public class Quiz {
+public class Note {
 
     private int _id;
     private int _courseId;
-    private String _place;
+    private String _content;
     private long _date;
 
 
-    public Quiz(String _place) {
-        this._place = _place;
+    public Note(String _content) {
+        this._content = _content;
     }
 
 
@@ -32,12 +32,12 @@ public class Quiz {
         this._courseId = _courseId;
     }
 
-    public String get_place() {
-        return _place;
+    public String get_content() {
+        return _content;
     }
 
-    public void set_place(String _place) {
-        this._place = _place;
+    public void set_content(String _content) {
+        this._content = _content;
     }
 
     public long get_date() {

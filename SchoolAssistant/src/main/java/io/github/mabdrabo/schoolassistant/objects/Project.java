@@ -1,4 +1,4 @@
-package io.github.mabdrabo.schoolassistant;
+package io.github.mabdrabo.schoolassistant.objects;
 
 /**
  * Created by mahmoud on 9/3/13.

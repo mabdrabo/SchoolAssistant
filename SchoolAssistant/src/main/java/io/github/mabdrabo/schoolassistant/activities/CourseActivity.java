@@ -1,4 +1,4 @@
-package io.github.mabdrabo.schoolassistant;
+package io.github.mabdrabo.schoolassistant.activities;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -11,6 +11,15 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+
+import io.github.mabdrabo.schoolassistant.ExpandableListAdapter;
+import io.github.mabdrabo.schoolassistant.R;
+import io.github.mabdrabo.schoolassistant.objects.Assignment;
+import io.github.mabdrabo.schoolassistant.objects.Course;
+import io.github.mabdrabo.schoolassistant.objects.Note;
+import io.github.mabdrabo.schoolassistant.objects.Project;
+import io.github.mabdrabo.schoolassistant.objects.Quiz;
+import io.github.mabdrabo.schoolassistant.objects.Section;
 
 public class CourseActivity extends Activity {
 

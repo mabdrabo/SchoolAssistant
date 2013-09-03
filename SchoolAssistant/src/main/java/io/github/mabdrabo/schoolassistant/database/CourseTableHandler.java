@@ -1,4 +1,4 @@
-package io.github.mabdrabo.schoolassistant;
+package io.github.mabdrabo.schoolassistant.database;
 
 import android.content.ContentValues;
 import android.database.Cursor;
@@ -6,6 +6,13 @@ import android.database.sqlite.SQLiteDatabase;
 import android.widget.ArrayAdapter;
 
 import java.util.ArrayList;
+
+import io.github.mabdrabo.schoolassistant.objects.Assignment;
+import io.github.mabdrabo.schoolassistant.objects.Course;
+import io.github.mabdrabo.schoolassistant.objects.Note;
+import io.github.mabdrabo.schoolassistant.objects.Project;
+import io.github.mabdrabo.schoolassistant.objects.Quiz;
+import io.github.mabdrabo.schoolassistant.objects.Section;
 
 /**
  * Created by mahmoud on 9/3/13.

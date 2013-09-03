@@ -1,4 +1,4 @@
-package io.github.mabdrabo.schoolassistant;
+package io.github.mabdrabo.schoolassistant.objects;
 
 import java.util.ArrayList;
 

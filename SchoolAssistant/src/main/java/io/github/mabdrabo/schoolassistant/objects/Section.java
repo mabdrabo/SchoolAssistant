@@ -1,4 +1,6 @@
-package io.github.mabdrabo.schoolassistant;
+package io.github.mabdrabo.schoolassistant.objects;
+
+import io.github.mabdrabo.schoolassistant.activities.MainActivity;
 
 /**
  * Created by mahmoud on 9/3/13.

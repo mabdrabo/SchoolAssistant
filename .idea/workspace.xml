@@ -14,37 +14,24 @@
     <option name="TOOL_WINDOW_CUSTOM_FILTER" value="21152" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f248c8b8-af67-4859-a2c1-e9a8a1beaf95" name="Default" comment="database">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/Assignment.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/AssignmentTableHandler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/Course.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/CourseActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/CourseTableHandler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/CoursesActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/DatabaseHandler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/ExpandableListAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/Note.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/NoteTableHandler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/Project.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/ProjectTableHandler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/Quiz.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/QuizTableHandler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/Section.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/SectionTableHandler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SchoolAssistant/src/main/res/layout/activity_course.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SchoolAssistant/src/main/res/layout/activity_courses.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SchoolAssistant/src/main/res/menu/course.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SchoolAssistant/src/main/res/menu/courses.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SchoolAssistant/src/main/res/layout/list_child.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SchoolAssistant/src/main/res/layout/list_group.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SchoolAssistant/build/source/buildConfig/debug/io/mabdrabo/schoolassistant/BuildConfig.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SchoolAssistant/build/source/r/debug/io/mabdrabo/schoolassistant/R.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/mabdrabo/schoolassistant/MainActivity.java" afterPath="" />
+    <list default="true" id="f248c8b8-af67-4859-a2c1-e9a8a1beaf95" name="Default" comment="">
+      <change type="MOVED" beforePath="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/Assignment.java" afterPath="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/objects/Assignment.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/AssignmentTableHandler.java" afterPath="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/database/AssignmentTableHandler.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/Course.java" afterPath="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/objects/Course.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/CourseActivity.java" afterPath="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/activities/CourseActivity.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/CourseTableHandler.java" afterPath="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/database/CourseTableHandler.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/CoursesActivity.java" afterPath="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/activities/CoursesActivity.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/DatabaseHandler.java" afterPath="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/database/DatabaseHandler.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/Note.java" afterPath="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/objects/Note.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/NoteTableHandler.java" afterPath="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/database/NoteTableHandler.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/Project.java" afterPath="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/objects/Project.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/ProjectTableHandler.java" afterPath="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/database/ProjectTableHandler.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/Quiz.java" afterPath="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/objects/Quiz.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/QuizTableHandler.java" afterPath="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/database/QuizTableHandler.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/Section.java" afterPath="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/objects/Section.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/SectionTableHandler.java" afterPath="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/database/SectionTableHandler.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SchoolAssistant/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/SchoolAssistant/src/main/AndroidManifest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SchoolAssistant/build/res/all/debug/layout/activity_main.xml" afterPath="$PROJECT_DIR$/SchoolAssistant/build/res/all/debug/layout/activity_main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SchoolAssistant/src/main/res/layout/activity_main.xml" afterPath="$PROJECT_DIR$/SchoolAssistant/src/main/res/layout/activity_main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SchoolAssistant/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/SchoolAssistant/src/main/res/values/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SchoolAssistant/build/res/all/debug/values/values.xml" afterPath="$PROJECT_DIR$/SchoolAssistant/build/res/all/debug/values/values.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="SchoolAssistant.iws" />
@@ -110,13 +97,13 @@
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="CoursesActivity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/CoursesActivity.java">
+        <entry file="file://$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/activities/CoursesActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="88" column="35" selection-start="3016" selection-end="3016" vertical-scroll-proportion="0.0" vertical-offset="435" max-vertical-offset="1035">
+            <state line="91" column="35" selection-start="3131" selection-end="3131" vertical-scroll-proportion="0.0" vertical-offset="480" max-vertical-offset="1080">
               <folding>
                 <element signature="imports" expanded="false" />
-                <element signature="e#1130#1497#0" expanded="true" />
-                <element signature="e#1486#1487#0" expanded="true" />
+                <element signature="e#1245#1612#0" expanded="true" />
+                <element signature="e#1601#1602#0" expanded="true" />
                 <element signature="method#setupActionBar#0;class#CoursesActivity#0" expanded="false" />
                 <element signature="method#onCreateOptionsMenu#0;class#CoursesActivity#0" expanded="false" />
                 <element signature="method#onOptionsItemSelected#0;class#CoursesActivity#0" expanded="false" />
@@ -126,56 +113,56 @@
         </entry>
       </file>
       <file leaf-file-name="CourseActivity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/CourseActivity.java">
+        <entry file="file://$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/activities/CourseActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="89" column="45" selection-start="3043" selection-end="3043" vertical-scroll-proportion="0.0" vertical-offset="599" max-vertical-offset="1230">
+            <state line="98" column="45" selection-start="3515" selection-end="3515" vertical-scroll-proportion="0.0" vertical-offset="734" max-vertical-offset="1365">
               <folding>
                 <element signature="imports" expanded="false" />
                 <element signature="method#setupActionBar#0;class#CourseActivity#0" expanded="false" />
                 <element signature="method#onCreateOptionsMenu#0;class#CourseActivity#0" expanded="false" />
                 <element signature="method#onOptionsItemSelected#0;class#CourseActivity#0" expanded="false" />
-                <element signature="e#2705#2713#0" expanded="true" />
-                <element signature="e#3054#3062#0" expanded="true" />
-                <element signature="e#3131#3153#0" expanded="true" />
+                <element signature="e#3177#3185#0" expanded="true" />
+                <element signature="e#3526#3534#0" expanded="true" />
+                <element signature="e#3603#3625#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="DatabaseHandler.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/DatabaseHandler.java">
+        <entry file="file://$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/database/DatabaseHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="73" column="30" selection-start="2533" selection-end="2533" vertical-scroll-proportion="0.0" vertical-offset="949" max-vertical-offset="1365">
+            <state line="76" column="30" selection-start="2660" selection-end="2660" vertical-scroll-proportion="0.0" vertical-offset="994" max-vertical-offset="1410">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="SectionTableHandler.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/SectionTableHandler.java">
+        <entry file="file://$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/database/SectionTableHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="86" column="43" selection-start="3212" selection-end="3212" vertical-scroll-proportion="0.0" vertical-offset="1141" max-vertical-offset="1740">
+            <state line="88" column="43" selection-start="3281" selection-end="3281" vertical-scroll-proportion="0.0" vertical-offset="1171" max-vertical-offset="1770">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3328#3337#0" expanded="true" />
+                <element signature="e#3397#3406#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="Section.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/Section.java">
+        <entry file="file://$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/objects/Section.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="0" selection-start="306" selection-end="306" vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="1110">
+            <state line="20" column="0" selection-start="382" selection-end="382" vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="1140">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="MainActivity.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/MainActivity.java">
+        <entry file="file://$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/activities/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="27" selection-start="1247" selection-end="1247" vertical-scroll-proportion="0.56997454" vertical-offset="211" max-vertical-offset="915">
+            <state line="38" column="27" selection-start="1489" selection-end="1489" vertical-scroll-proportion="0.5008347" vertical-offset="135" max-vertical-offset="915">
               <folding />
             </state>
           </provider>
@@ -230,7 +217,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/ProjectTableHandler.java" />
         <option value="$PROJECT_DIR$/SchoolAssistant/src/main/res/layout/fragment_courses_dummy.xml" />
         <option value="$PROJECT_DIR$/SchoolAssistant/src/main/res/layout/activity_main.xml" />
         <option value="$PROJECT_DIR$/SchoolAssistant/src/main/res/layout/activity_courses.xml" />
@@ -243,9 +229,10 @@
         <option value="$PROJECT_DIR$/SchoolAssistant/src/main/res/layout/list_child.xml" />
         <option value="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/ExpandableListAdapter.java" />
         <option value="$PROJECT_DIR$/SchoolAssistant/src/main/res/layout/list_group.xml" />
-        <option value="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/MainActivity.java" />
         <option value="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/SectionTableHandler.java" />
         <option value="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/CourseActivity.java" />
+        <option value="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/MainActivity.java" />
+        <option value="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/activities/MainActivity.java" />
       </list>
     </option>
   </component>
@@ -458,7 +445,7 @@
   <component name="RunManager" selected="Android Application.SchoolAssistant">
     <configuration default="false" name="SchoolAssistant" type="AndroidRunConfigurationType" factoryName="Android Application" temporary="true">
       <module name="SchoolAssistant-SchoolAssistant" />
-      <option name="ACTIVITY_CLASS" value="io.github.mabdrabo.schoolassistant.CoursesActivity" />
+      <option name="ACTIVITY_CLASS" value="io.github.mabdrabo.schoolassistant.activities.CoursesActivity" />
       <option name="MODE" value="default_activity" />
       <option name="DEPLOY" value="true" />
       <option name="TARGET_SELECTION_MODE" value="USB_DEVICE" />
@@ -637,11 +624,16 @@
       <created>1378154521909</created>
       <updated>1378154521909</updated>
     </task>
+    <task id="LOCAL-00001" summary="database">
+      <created>1378228179782</created>
+      <updated>1378228179782</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1280" height="747" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -655,14 +647,14 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24959481" sideWeight="0.4274322" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32854864" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32854864" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Android" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.46272284" sideWeight="0.67145133" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24959481" sideWeight="0.57256776" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2949757" sideWeight="0.67145133" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32820097" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -719,7 +711,7 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/ProjectTableHandler.java">
+    <entry file="file://$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/database/ProjectTableHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="0" selection-start="187" selection-end="187" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
           <folding />
@@ -746,18 +738,18 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/CourseTableHandler.java">
+    <entry file="file://$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/database/CourseTableHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="25" column="33" selection-start="728" selection-end="728" vertical-scroll-proportion="0.0" vertical-offset="61" max-vertical-offset="1845">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1570#1578#0" expanded="true" />
-            <element signature="e#2533#2541#0" expanded="true" />
+            <element signature="e#1930#1938#0" expanded="true" />
+            <element signature="e#2893#2901#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/Course.java">
+    <entry file="file://$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/objects/Course.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="41" selection-start="238" selection-end="438" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1305">
           <folding>
@@ -805,9 +797,9 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/DatabaseHandler.java">
+    <entry file="file://$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/database/DatabaseHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="30" selection-start="2533" selection-end="2533" vertical-scroll-proportion="0.0" vertical-offset="949" max-vertical-offset="1365">
+        <state line="76" column="30" selection-start="2660" selection-end="2660" vertical-scroll-proportion="0.0" vertical-offset="994" max-vertical-offset="1410">
           <folding />
         </state>
       </provider>
@@ -819,30 +811,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/SectionTableHandler.java">
+    <entry file="file://$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/database/SectionTableHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="86" column="43" selection-start="3212" selection-end="3212" vertical-scroll-proportion="0.0" vertical-offset="1141" max-vertical-offset="1740">
+        <state line="88" column="43" selection-start="3281" selection-end="3281" vertical-scroll-proportion="0.0" vertical-offset="1171" max-vertical-offset="1770">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3328#3337#0" expanded="true" />
+            <element signature="e#3397#3406#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/Section.java">
+    <entry file="file://$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/objects/Section.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="0" selection-start="306" selection-end="306" vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="1110">
+        <state line="20" column="0" selection-start="382" selection-end="382" vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="1140">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/CoursesActivity.java">
+    <entry file="file://$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/activities/CoursesActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="88" column="35" selection-start="3016" selection-end="3016" vertical-scroll-proportion="0.0" vertical-offset="435" max-vertical-offset="1035">
+        <state line="91" column="35" selection-start="3131" selection-end="3131" vertical-scroll-proportion="0.0" vertical-offset="480" max-vertical-offset="1080">
           <folding>
             <element signature="imports" expanded="false" />
-            <element signature="e#1130#1497#0" expanded="true" />
-            <element signature="e#1486#1487#0" expanded="true" />
+            <element signature="e#1245#1612#0" expanded="true" />
+            <element signature="e#1601#1602#0" expanded="true" />
             <element signature="method#setupActionBar#0;class#CoursesActivity#0" expanded="false" />
             <element signature="method#onCreateOptionsMenu#0;class#CoursesActivity#0" expanded="false" />
             <element signature="method#onOptionsItemSelected#0;class#CoursesActivity#0" expanded="false" />
@@ -850,24 +842,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/CourseActivity.java">
+    <entry file="file://$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/activities/CourseActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="89" column="45" selection-start="3043" selection-end="3043" vertical-scroll-proportion="0.0" vertical-offset="599" max-vertical-offset="1230">
+        <state line="98" column="45" selection-start="3515" selection-end="3515" vertical-scroll-proportion="0.0" vertical-offset="734" max-vertical-offset="1365">
           <folding>
             <element signature="imports" expanded="false" />
             <element signature="method#setupActionBar#0;class#CourseActivity#0" expanded="false" />
             <element signature="method#onCreateOptionsMenu#0;class#CourseActivity#0" expanded="false" />
             <element signature="method#onOptionsItemSelected#0;class#CourseActivity#0" expanded="false" />
-            <element signature="e#2705#2713#0" expanded="true" />
-            <element signature="e#3054#3062#0" expanded="true" />
-            <element signature="e#3131#3153#0" expanded="true" />
+            <element signature="e#3177#3185#0" expanded="true" />
+            <element signature="e#3526#3534#0" expanded="true" />
+            <element signature="e#3603#3625#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/MainActivity.java">
+    <entry file="file://$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/activities/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="27" selection-start="1247" selection-end="1247" vertical-scroll-proportion="0.56997454" vertical-offset="211" max-vertical-offset="915">
+        <state line="38" column="27" selection-start="1489" selection-end="1489" vertical-scroll-proportion="0.5008347" vertical-offset="135" max-vertical-offset="915">
           <folding />
         </state>
       </provider>

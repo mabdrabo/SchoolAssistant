@@ -1,10 +1,13 @@
-package io.github.mabdrabo.schoolassistant;
+package io.github.mabdrabo.schoolassistant.database;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 import java.util.ArrayList;
+
+import io.github.mabdrabo.schoolassistant.objects.Course;
+import io.github.mabdrabo.schoolassistant.objects.Section;
 
 /**
  * Created by mahmoud on 9/3/13.

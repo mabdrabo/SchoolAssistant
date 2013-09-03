@@ -14,7 +14,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme">
         <activity
-            android:name="io.github.mabdrabo.schoolassistant.MainActivity"
+            android:name=".activities.MainActivity"
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,7 +23,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="io.github.mabdrabo.schoolassistant.CoursesActivity"
+            android:name=".activities.CoursesActivity"
             android:label="@string/title_activity_courses"
             android:parentActivityName="io.github.mabdrabo.schoolassistant.MainActivity">
             <meta-data
@@ -31,7 +31,7 @@
                 android:value="io.github.mabdrabo.schoolassistant.MainActivity" />
         </activity>
         <activity
-            android:name="io.github.mabdrabo.schoolassistant.CourseActivity"
+            android:name=".activities.CourseActivity"
             android:label="@string/title_activity_course"
             android:parentActivityName="io.github.mabdrabo.schoolassistant.CoursesActivity">
             <meta-data
