@@ -5,7 +5,7 @@ package io.github.mabdrabo.schoolassistant.objects;
  */
 public class Assignment {
 
-    private int id;
+    private int _id;
     private int _courseId;
     private String _description;
     private long _dueDate;
@@ -17,12 +17,12 @@ public class Assignment {
     }
 
 
-    public int getId() {
-        return id;
+    public int get_id() {
+        return _id;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void set_id(int id) {
+        this._id = id;
     }
 
     public int get_courseId() {

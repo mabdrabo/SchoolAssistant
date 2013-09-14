@@ -12,8 +12,8 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Course"
-        android:id="@+id/textView"
-        android:paddingTop="8dp" />
+        android:id="@+id/textView" />
+
     <Spinner
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -21,67 +21,45 @@
         android:layout_alignParentTop="true"
         android:layout_toRightOf="@+id/textView" />
 
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Place"
         android:id="@+id/textView2"
-        android:paddingTop="8dp"
-        android:layout_below="@+id/courseSpinner"
-        android:layout_alignParentLeft="true" />
+        android:text="Description"
+        android:layout_below="@+id/courseSpinner" />
+
     <EditText
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/placeEditText"
-        android:layout_below="@+id/courseSpinner"
-        android:layout_toRightOf="@+id/textView"
-        android:hint="C7 201" />
-
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/AssignmentEditText"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Day"
         android:id="@+id/textView3"
-        android:paddingTop="8dp"
-        android:layout_below="@+id/placeEditText"
-        android:layout_alignParentLeft="true" />
-    <Spinner
-        android:layout_width="wrap_content"
+        android:text="Notes"
+        android:layout_below="@+id/AssignmentEditText" />
+
+    <EditText
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/daySpinner"
-        android:layout_below="@+id/placeEditText"
-        android:layout_toRightOf="@+id/textView" />
-
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Time"
-        android:id="@+id/textView4"
-        android:layout_below="@+id/daySpinner"
-        android:layout_alignParentLeft="true" />
-    <Spinner
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/timeSpinner"
-        android:layout_below="@+id/daySpinner"
-        android:layout_toRightOf="@+id/textView" />
-
-
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/AssignmentNotesEditText"
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true" />
 
     <Button
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="Add"
-        android:id="@+id/addSectionButton"
-        android:layout_marginTop="@dimen/activity_vertical_margin"
-        android:layout_below="@+id/timeSpinner"
-        android:layout_centerHorizontal="true" />
+        android:id="@+id/addAssignmentButton"
+        android:layout_below="@+id/AssignmentNotesEditText" />
 
-
-</RelativeLayout>
+</RelativeLayout><!-- From: file:/Users/mahmoud/Documents/workspace_android/SchoolAssistant/SchoolAssistant/src/main/res/layout/add_assignment_dialog.xml -->

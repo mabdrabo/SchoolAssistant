@@ -6,7 +6,11 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 import java.util.ArrayList;
 
+import io.github.mabdrabo.schoolassistant.objects.Assignment;
 import io.github.mabdrabo.schoolassistant.objects.Course;
+import io.github.mabdrabo.schoolassistant.objects.Note;
+import io.github.mabdrabo.schoolassistant.objects.Project;
+import io.github.mabdrabo.schoolassistant.objects.Quiz;
 import io.github.mabdrabo.schoolassistant.objects.Section;
 
 /**
@@ -40,10 +44,10 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase db) {
         db.execSQL(CourseTableHandler.CREATE_COURSES_TABLE);
         db.execSQL(SectionTableHandler.CREATE_SECTIONS_TABLE);
-//        db.execSQL(NoteTableHandler.CREATE_NOTES_TABLE);
-//        db.execSQL(AssignmentTableHandler.CREATE_ASSIGNMENTS_TABLE);
-//        db.execSQL(QuizTableHandler.CREATE_QUIZES_TABLE);
-//        db.execSQL(ProjectTableHandler.CREATE_PROJECTS_TABLE);
+        db.execSQL(NoteTableHandler.CREATE_NOTES_TABLE);
+        db.execSQL(AssignmentTableHandler.CREATE_ASSIGNMENTS_TABLE);
+        db.execSQL(QuizTableHandler.CREATE_QUIZZES_TABLE);
+        db.execSQL(ProjectTableHandler.CREATE_PROJECTS_TABLE);
     }
 
     // Upgrading database
@@ -52,7 +56,10 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         // Drop older table if existed
         db.execSQL("DROP TABLE IF EXISTS " + CourseTableHandler.TABLE_COURSES);
         db.execSQL("DROP TABLE IF EXISTS " + SectionTableHandler.TABLE_SECTIONS);
-//        db.execSQL("DROP TABLE IF EXISTS " + NoteTableHandler.TABLE_NOTES);
+        db.execSQL("DROP TABLE IF EXISTS " + NoteTableHandler.TABLE_NOTES);
+        db.execSQL("DROP TABLE IF EXISTS " + AssignmentTableHandler.TABLE_ASSIGNMENT);
+        db.execSQL("DROP TABLE IF EXISTS " + QuizTableHandler.TABLE_QUIZ);
+        db.execSQL("DROP TABLE IF EXISTS " + ProjectTableHandler.TABLE_PROJECTS);
 //        Create tables again
         onCreate(db);
     }
@@ -81,8 +88,64 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         return SectionTableHandler.getAll(course_id);
     }
 
-    public ArrayList<Section> getAllSections(int course_id) {
+    public ArrayList<Section> getAllSections() {
         return SectionTableHandler.getAll(-1);
+    }
+    ///////////////////////////////////////
+
+    // NOTES //
+    public void addNote(Note note) {
+        NoteTableHandler.add(note);
+    }
+
+    public ArrayList<Note> getCourseNotes(int course_id) {
+        return NoteTableHandler.getAll(course_id);
+    }
+
+    public ArrayList<Note> getAllNotes() {
+        return NoteTableHandler.getAll(-1);
+    }
+    ///////////////////////////////////////
+
+    // ASSIGNMENTS //
+    public void addAssignment(Assignment assignment) {
+        AssignmentTableHandler.add(assignment);
+    }
+
+    public ArrayList<Assignment> getCourseAssignments(int course_id) {
+        return AssignmentTableHandler.getAll(course_id);
+    }
+
+    public ArrayList<Assignment> getAllAssignments() {
+        return AssignmentTableHandler.getAll(-1);
+    }
+    ///////////////////////////////////////
+
+    // QUIZZES //
+    public void addQuiz(Quiz quiz) {
+        QuizTableHandler.add(quiz);
+    }
+
+    public ArrayList<Quiz> getCourseQuizzes(int course_id) {
+        return QuizTableHandler.getAll(course_id);
+    }
+
+    public ArrayList<Quiz> getAllQuizzes(int course_id) {
+        return QuizTableHandler.getAll(-1);
+    }
+    ///////////////////////////////////////
+
+    // PROJECTS //
+    public void addProject(Project project) {
+        ProjectTableHandler.add(project);
+    }
+
+    public ArrayList<Project> getCourseProjects(int course_id) {
+        return ProjectTableHandler.getAll(course_id);
+    }
+
+    public ArrayList<Project> getAllProjects() {
+        return ProjectTableHandler.getAll(-1);
     }
     ///////////////////////////////////////
 }

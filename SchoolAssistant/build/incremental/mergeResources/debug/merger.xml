@@ -76,13 +76,13 @@
                 qualifiers="" >
                 <string name="title_section1" >Section 1
                 </string>
-                <string name="title_section3" >Section 3
-                </string>
                 <string name="action_settings" >Settings
                 </string>
-                <string name="title_section2" >Section 2
+                <string name="title_section3" >Section 3
                 </string>
                 <string name="title_activity_courses" >Courses
+                </string>
+                <string name="title_section2" >Section 2
                 </string>
                 <string name="title_activity_course" >Course
                 </string>
@@ -149,6 +149,36 @@
             <file
                 name="add_class_dialog"
                 path="/Users/mahmoud/Documents/workspace_android/SchoolAssistant/SchoolAssistant/src/main/res/layout/add_class_dialog.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="add_note_dialog"
+                path="/Users/mahmoud/Documents/workspace_android/SchoolAssistant/SchoolAssistant/src/main/res/layout/add_note_dialog.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="add_assignment_dialog"
+                path="/Users/mahmoud/Documents/workspace_android/SchoolAssistant/SchoolAssistant/src/main/res/layout/add_assignment_dialog.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="add_quiz_dialog"
+                path="/Users/mahmoud/Documents/workspace_android/SchoolAssistant/SchoolAssistant/src/main/res/layout/add_quiz_dialog.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="add_project_dialog"
+                path="/Users/mahmoud/Documents/workspace_android/SchoolAssistant/SchoolAssistant/src/main/res/layout/add_project_dialog.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="class_dialog"
+                path="/Users/mahmoud/Documents/workspace_android/SchoolAssistant/SchoolAssistant/src/main/res/layout/class_dialog.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="activity_schedule"
+                path="/Users/mahmoud/Documents/workspace_android/SchoolAssistant/SchoolAssistant/src/main/res/layout/activity_schedule.xml"
                 qualifiers=""
                 type="layout" />
         </source>

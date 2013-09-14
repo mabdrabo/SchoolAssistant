@@ -90,8 +90,8 @@ public class SectionTableHandler {
     public static ArrayList<Section> getAll(int course_id) {
         ArrayList<Section> sectionList = new ArrayList<Section>();
         SQLiteDatabase db = dbHandler.getReadableDatabase();
-//        String selection = (course_id > -1)? KEY_COURSE_ID + "=" + course_id : null;
-        Cursor cursor = db.query(TABLE_SECTIONS, null, KEY_COURSE_ID + "=" + course_id, null, null, null, KEY_DAY + " ASC");
+        String selection = (course_id > -1)? KEY_COURSE_ID + "=" + course_id : null;
+        Cursor cursor = db.query(TABLE_SECTIONS, null, selection, null, null, null, KEY_DAY + " ASC");
 
         if (cursor.moveToFirst()) {
             do {
@@ -106,7 +106,6 @@ public class SectionTableHandler {
             } while (cursor.moveToNext());
             cursor.close();
         }
-        System.out.println(sectionList.size() + "ddddddddd");
         return sectionList;
     }
 }

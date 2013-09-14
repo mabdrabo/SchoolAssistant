@@ -19,6 +19,7 @@
         android:layout_gravity="left" />
 
     <ListView
+        android:id="@+id/upcomingListView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
@@ -36,7 +37,8 @@
             android:text="   Schedule    "
             android:id="@+id/scheduleButton"
             android:layout_row="0"
-            android:layout_column="0" />
+            android:layout_column="0"
+            android:onClick="onClickScheduleButton" />
 
         <Button
             android:layout_width="wrap_content"
@@ -44,7 +46,8 @@
             android:text=" Today  "
             android:id="@+id/todayButton"
             android:layout_row="0"
-            android:layout_column="1" />
+            android:layout_column="1"
+            android:onClick="onClickTodayButton" />
 
         <Button
             android:layout_width="wrap_content"
@@ -62,7 +65,8 @@
             android:text="Assignments"
             android:id="@+id/assignmentsButton"
             android:layout_row="1"
-            android:layout_column="0" />
+            android:layout_column="0"
+            android:onClick="onClickAssignmentsButton" />
 
         <Button
             android:layout_width="wrap_content"
@@ -70,7 +74,8 @@
             android:text="Quizzes"
             android:id="@+id/quizzesButton"
             android:layout_row="1"
-            android:layout_column="1" />
+            android:layout_column="1"
+            android:onClick="onClickQuizzesButton" />
 
         <Button
             android:layout_width="wrap_content"
@@ -78,7 +83,8 @@
             android:text="Projects"
             android:id="@+id/projectsButton"
             android:layout_row="1"
-            android:layout_column="2" />
+            android:layout_column="2"
+            android:onClick="onClickProjectsButton" />
 
     </GridLayout>
 

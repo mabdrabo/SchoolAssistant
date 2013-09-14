@@ -96,23 +96,4 @@ public class CourseTableHandler {
         return courseList;
     }
 
-    public static ArrayList<Section> getSections(int course_id) {
-        return null;
-    }
-
-    public static ArrayList<Note> getNotes(int course_id) {
-        return null;
-    }
-
-    public static ArrayList<Assignment> getAssignments(int course_id) {
-        return null;
-    }
-
-    public static ArrayList<Quiz> getQuizes(int course_id) {
-        return null;
-    }
-
-    public static ArrayAdapter<Project> getProjects(int course_id) {
-        return null;
-    }
 }

@@ -65,12 +65,13 @@
         android:id="@+id/textView4"
         android:layout_below="@+id/daySpinner"
         android:layout_alignParentLeft="true" />
-    <TimePicker
+    <Spinner
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/classTimePicker"
+        android:id="@+id/timeSpinner"
+        android:layout_below="@+id/daySpinner"
+        android:layout_toRightOf="@+id/textView" />
 
-        android:layout_below="@+id/textView4" />
 
 
     <Button
@@ -79,7 +80,8 @@
         android:text="Add"
         android:id="@+id/addSectionButton"
         android:layout_marginTop="@dimen/activity_vertical_margin"
-        android:layout_below="@+id/classTimePicker"
+        android:layout_below="@+id/timeSpinner"
         android:layout_centerHorizontal="true" />
+
 
 </RelativeLayout><!-- From: file:/Users/mahmoud/Documents/workspace_android/SchoolAssistant/SchoolAssistant/src/main/res/layout/add_class_dialog.xml -->

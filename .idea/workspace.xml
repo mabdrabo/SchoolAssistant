@@ -12,19 +12,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f248c8b8-af67-4859-a2c1-e9a8a1beaf95" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SchoolAssistant/src/main/res/layout/add_class_dialog.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SchoolAssistant/src/main/res/layout/add_course_dialog.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SchoolAssistant/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/SchoolAssistant/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/objects/Course.java" afterPath="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/objects/Course.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SchoolAssistant/src/main/res/layout/activity_schedule.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SchoolAssistant/src/main/res/layout/add_assignment_dialog.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SchoolAssistant/src/main/res/layout/add_note_dialog.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SchoolAssistant/src/main/res/layout/add_project_dialog.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SchoolAssistant/src/main/res/layout/add_quiz_dialog.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SchoolAssistant/src/main/res/layout/class_dialog.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/objects/Assignment.java" afterPath="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/objects/Assignment.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/database/AssignmentTableHandler.java" afterPath="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/database/AssignmentTableHandler.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/activities/CourseActivity.java" afterPath="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/activities/CourseActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/database/CourseTableHandler.java" afterPath="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/database/CourseTableHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/activities/CoursesActivity.java" afterPath="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/activities/CoursesActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/objects/Section.java" afterPath="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/objects/Section.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/database/DatabaseHandler.java" afterPath="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/database/DatabaseHandler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/activities/MainActivity.java" afterPath="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/activities/MainActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/database/NoteTableHandler.java" afterPath="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/database/NoteTableHandler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/database/ProjectTableHandler.java" afterPath="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/database/ProjectTableHandler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/database/QuizTableHandler.java" afterPath="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/database/QuizTableHandler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SchoolAssistant/build/source/r/debug/io/github/mabdrabo/schoolassistant/R.java" afterPath="$PROJECT_DIR$/SchoolAssistant/build/source/r/debug/io/github/mabdrabo/schoolassistant/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SchoolAssistant/SchoolAssistant-SchoolAssistant.iml" afterPath="$PROJECT_DIR$/SchoolAssistant/SchoolAssistant-SchoolAssistant.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/database/SectionTableHandler.java" afterPath="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/database/SectionTableHandler.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SchoolAssistant/build/res/all/debug/layout/activity_main.xml" afterPath="$PROJECT_DIR$/SchoolAssistant/build/res/all/debug/layout/activity_main.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SchoolAssistant/src/main/res/layout/activity_main.xml" afterPath="$PROJECT_DIR$/SchoolAssistant/src/main/res/layout/activity_main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SchoolAssistant/src/main/res/menu/course.xml" afterPath="$PROJECT_DIR$/SchoolAssistant/src/main/res/menu/course.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SchoolAssistant/src/main/res/menu/courses.xml" afterPath="$PROJECT_DIR$/SchoolAssistant/src/main/res/menu/courses.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SchoolAssistant/build/res/all/debug/layout/add_class_dialog.xml" afterPath="$PROJECT_DIR$/SchoolAssistant/build/res/all/debug/layout/add_class_dialog.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SchoolAssistant/src/main/res/layout/add_class_dialog.xml" afterPath="$PROJECT_DIR$/SchoolAssistant/src/main/res/layout/add_class_dialog.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SchoolAssistant/build/res/all/debug/layout/list_child.xml" afterPath="$PROJECT_DIR$/SchoolAssistant/build/res/all/debug/layout/list_child.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SchoolAssistant/src/main/res/layout/list_child.xml" afterPath="$PROJECT_DIR$/SchoolAssistant/src/main/res/layout/list_child.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SchoolAssistant/build/res/all/debug/layout/list_group.xml" afterPath="$PROJECT_DIR$/SchoolAssistant/build/res/all/debug/layout/list_group.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SchoolAssistant/src/main/res/layout/list_group.xml" afterPath="$PROJECT_DIR$/SchoolAssistant/src/main/res/layout/list_group.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="SchoolAssistant.iws" />
@@ -89,91 +102,65 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="CoursesActivity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/activities/CoursesActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="104" column="30" selection-start="3450" selection-end="3450" vertical-scroll-proportion="0.0" vertical-offset="285" max-vertical-offset="1649">
-              <folding>
-                <element signature="e#1334#1701#0" expanded="true" />
-                <element signature="e#1690#1691#0" expanded="true" />
-                <element signature="method#setupActionBar#0;class#CoursesActivity#0" expanded="false" />
-                <element signature="method#onCreateOptionsMenu#0;class#CoursesActivity#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CourseActivity.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="CourseActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/activities/CourseActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="39" selection-start="1604" selection-end="1604" vertical-scroll-proportion="-0.68948245" vertical-offset="1212" max-vertical-offset="2363">
+            <state line="281" column="27" selection-start="11493" selection-end="11493" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="885">
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#3363#3371#0" expanded="true" />
-                <element signature="e#3803#3811#0" expanded="true" />
-                <element signature="e#3880#3902#0" expanded="true" />
+                <element signature="method#onCreate#0;class#CourseActivity#0" expanded="false" />
+                <element signature="docComment;method#setupActionBar#0;class#CourseActivity#0" expanded="false" />
+                <element signature="method#setupActionBar#0;class#CourseActivity#0" expanded="false" />
+                <element signature="method#onCreateOptionsMenu#0;class#CourseActivity#0" expanded="false" />
+                <element signature="method#onOptionsItemSelected#0;class#CourseActivity#0" expanded="false" />
+                <element signature="method#onResume#0;class#CourseActivity#0" expanded="false" />
                 <element signature="method#addSection#0;class#CourseActivity#0" expanded="false" />
-                <element signature="e#4788#4796#0" expanded="true" />
-                <element signature="e#5297#5305#0" expanded="true" />
-                <element signature="e#5720#5728#0" expanded="true" />
-                <element signature="e#6185#7023#0" expanded="true" />
-                <element signature="e#7012#7013#0" expanded="true" />
+                <element signature="method#addNote#0;class#CourseActivity#0" expanded="false" />
+                <element signature="method#addAssignment#0;class#CourseActivity#0" expanded="false" />
+                <element signature="method#addQuiz#0;class#CourseActivity#0" expanded="false" />
+                <element signature="e#12037#12573#0" expanded="true" />
+                <element signature="e#12562#12563#0" expanded="true" />
+                <element signature="method#addProject#0;class#CourseActivity#0" expanded="false" />
+                <element signature="e#13190#13915#0" expanded="true" />
+                <element signature="e#13904#13905#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CourseTableHandler.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/database/CourseTableHandler.java">
+      <file leaf-file-name="activity_main.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SchoolAssistant/src/main/res/layout/activity_main.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="98" column="37" selection-start="3288" selection-end="3288" vertical-scroll-proportion="0.0" vertical-offset="1246" max-vertical-offset="1845">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2804#2812#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Section.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/objects/Section.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="15" selection-start="298" selection-end="298" vertical-scroll-proportion="0.0" vertical-offset="64" max-vertical-offset="1140">
+            <state line="86" column="50" selection-start="3097" selection-end="3118" vertical-scroll-proportion="-15.074074" vertical-offset="883" max-vertical-offset="1455">
               <folding />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainActivity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/activities/MainActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="22" selection-start="1746" selection-end="1746" vertical-scroll-proportion="0.0" vertical-offset="164" max-vertical-offset="795">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SectionTableHandler.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/database/SectionTableHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="69" column="42" selection-start="2532" selection-end="2532" vertical-scroll-proportion="0.0" vertical-offset="904" max-vertical-offset="1770">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#3399#3408#0" expanded="true" />
-              </folding>
-            </state>
+          <provider editor-type-id="android-designer">
+            <state />
           </provider>
         </entry>
       </file>
       <file leaf-file-name="add_class_dialog.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SchoolAssistant/src/main/res/layout/add_class_dialog.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="71" column="0" selection-start="2676" selection-end="2676" vertical-scroll-proportion="-11.185185" vertical-offset="763" max-vertical-offset="1350">
+            <state line="82" column="46" selection-start="3054" selection-end="3054" vertical-scroll-proportion="-18.407408" vertical-offset="733" max-vertical-offset="1380">
               <folding />
             </state>
           </provider>
           <provider editor-type-id="android-designer">
             <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainActivity.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/activities/MainActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="103" column="8" selection-start="3490" selection-end="3490" vertical-scroll-proportion="0.94991654" vertical-offset="211" max-vertical-offset="915">
+              <folding>
+                <element signature="method#onClickCoursesButton#0;class#MainActivity#0" expanded="false" />
+                <element signature="method#onClickScheduleButton#0;class#MainActivity#0" expanded="false" />
+                <element signature="e#3141#3149#0" expanded="true" />
+              </folding>
+            </state>
           </provider>
         </entry>
       </file>
@@ -193,6 +180,11 @@
     </option>
   </component>
   <component name="GradleLocalSettings">
+    <option name="tasksExpandState">
+      <map>
+        <entry key="" value="true" />
+      </map>
+    </option>
     <option name="availableProjects">
       <map>
         <entry>
@@ -217,6 +209,264 @@
         </entry>
       </map>
     </option>
+    <option name="availableTasks">
+      <map>
+        <entry key="$PROJECT_DIR$/SchoolAssistant">
+          <value>
+            <list>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the Android dependencies of the project" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SchoolAssistant" />
+                <option name="name" value="androidDependencies" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles all variants of all applications and secondary packages." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SchoolAssistant" />
+                <option name="name" value="assemble" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles all Debug builds" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SchoolAssistant" />
+                <option name="name" value="assembleDebug" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles all Release builds" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SchoolAssistant" />
+                <option name="name" value="assembleRelease" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles the Test build for the Debug build" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SchoolAssistant" />
+                <option name="name" value="assembleTest" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SchoolAssistant" />
+                <option name="name" value="build" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects that depend on it." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SchoolAssistant" />
+                <option name="name" value="buildDependents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects it depends on." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SchoolAssistant" />
+                <option name="name" value="buildNeeded" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs all checks." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SchoolAssistant" />
+                <option name="name" value="check" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Deletes the build directory." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SchoolAssistant" />
+                <option name="name" value="clean" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SchoolAssistant" />
+                <option name="name" value="compileDebug" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SchoolAssistant" />
+                <option name="name" value="compileDebugAidl" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SchoolAssistant" />
+                <option name="name" value="compileDebugRenderscript" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SchoolAssistant" />
+                <option name="name" value="compileRelease" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SchoolAssistant" />
+                <option name="name" value="compileReleaseAidl" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SchoolAssistant" />
+                <option name="name" value="compileReleaseRenderscript" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SchoolAssistant" />
+                <option name="name" value="compileTest" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SchoolAssistant" />
+                <option name="name" value="compileTestAidl" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SchoolAssistant" />
+                <option name="name" value="compileTestRenderscript" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs all device checks on currently connected devices." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SchoolAssistant" />
+                <option name="name" value="connectedCheck" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Installs and runs the tests for Build 'Debug' on connected devices." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SchoolAssistant" />
+                <option name="name" value="connectedInstrumentTest" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs all device checks using Device Providers and Test Servers." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SchoolAssistant" />
+                <option name="name" value="deviceCheck" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SchoolAssistant" />
+                <option name="name" value="dexDebug" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SchoolAssistant" />
+                <option name="name" value="dexRelease" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SchoolAssistant" />
+                <option name="name" value="dexTest" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SchoolAssistant" />
+                <option name="name" value="generateDebugBuildConfig" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SchoolAssistant" />
+                <option name="name" value="generateReleaseBuildConfig" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SchoolAssistant" />
+                <option name="name" value="generateTestBuildConfig" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Installs the Debug build" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SchoolAssistant" />
+                <option name="name" value="installDebug" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Installs the Test build for the Debug build" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SchoolAssistant" />
+                <option name="name" value="installTest" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SchoolAssistant" />
+                <option name="name" value="mergeDebugAssets" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SchoolAssistant" />
+                <option name="name" value="mergeDebugResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SchoolAssistant" />
+                <option name="name" value="mergeReleaseAssets" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SchoolAssistant" />
+                <option name="name" value="mergeReleaseResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SchoolAssistant" />
+                <option name="name" value="mergeTestAssets" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SchoolAssistant" />
+                <option name="name" value="mergeTestResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SchoolAssistant" />
+                <option name="name" value="packageDebug" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SchoolAssistant" />
+                <option name="name" value="packageRelease" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SchoolAssistant" />
+                <option name="name" value="packageTest" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SchoolAssistant" />
+                <option name="name" value="prepareDebugDependencies" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SchoolAssistant" />
+                <option name="name" value="prepareReleaseDependencies" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SchoolAssistant" />
+                <option name="name" value="prepareTestDependencies" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SchoolAssistant" />
+                <option name="name" value="processDebugJavaRes" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SchoolAssistant" />
+                <option name="name" value="processDebugManifest" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SchoolAssistant" />
+                <option name="name" value="processDebugResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SchoolAssistant" />
+                <option name="name" value="processReleaseJavaRes" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SchoolAssistant" />
+                <option name="name" value="processReleaseManifest" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SchoolAssistant" />
+                <option name="name" value="processReleaseResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SchoolAssistant" />
+                <option name="name" value="processTestJavaRes" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SchoolAssistant" />
+                <option name="name" value="processTestResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SchoolAssistant" />
+                <option name="name" value="processTestTestManifest" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the signing info for each variant" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SchoolAssistant" />
+                <option name="name" value="signingReport" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Uninstall all applications." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SchoolAssistant" />
+                <option name="name" value="uninstallAll" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Uninstalls the Debug build" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SchoolAssistant" />
+                <option name="name" value="uninstallDebug" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Uninstalls the Release build" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SchoolAssistant" />
+                <option name="name" value="uninstallRelease" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Uninstalls the Test build for the Debug build" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SchoolAssistant" />
+                <option name="name" value="uninstallTest" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SchoolAssistant" />
+                <option name="name" value="validateDebugSigning" />
+              </ExternalTaskPojo>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="modificationStamps">
       <map>
         <entry key="$PROJECT_DIR$" value="1378154521000" />
@@ -226,21 +476,21 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/SectionTableHandler.java" />
-        <option value="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/CourseActivity.java" />
-        <option value="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/MainActivity.java" />
-        <option value="$PROJECT_DIR$/SchoolAssistant/src/main/res/layout/activity_main.xml" />
-        <option value="$PROJECT_DIR$/SchoolAssistant/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/SchoolAssistant/src/main/res/menu/courses.xml" />
-        <option value="$PROJECT_DIR$/SchoolAssistant/src/main/res/menu/course.xml" />
-        <option value="$PROJECT_DIR$/SchoolAssistant/src/main/res/layout/add_course_dialog.xml" />
-        <option value="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/activities/CoursesActivity.java" />
-        <option value="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/objects/Course.java" />
-        <option value="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/objects/Section.java" />
-        <option value="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/database/SectionTableHandler.java" />
-        <option value="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/database/CourseTableHandler.java" />
+        <option value="$PROJECT_DIR$/SchoolAssistant/src/main/res/layout/add_assignment_dialog.xml" />
+        <option value="$PROJECT_DIR$/SchoolAssistant/src/main/res/layout/list_group.xml" />
+        <option value="$PROJECT_DIR$/SchoolAssistant/src/main/res/layout/list_child.xml" />
+        <option value="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/database/AssignmentTableHandler.java" />
+        <option value="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/database/QuizTableHandler.java" />
+        <option value="$PROJECT_DIR$/SchoolAssistant/src/main/res/layout/add_quiz_dialog.xml" />
+        <option value="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/database/ProjectTableHandler.java" />
+        <option value="$PROJECT_DIR$/SchoolAssistant/src/main/res/layout/add_project_dialog.xml" />
+        <option value="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/database/DatabaseHandler.java" />
         <option value="$PROJECT_DIR$/SchoolAssistant/src/main/res/layout/add_class_dialog.xml" />
+        <option value="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/database/SectionTableHandler.java" />
         <option value="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/activities/CourseActivity.java" />
+        <option value="$PROJECT_DIR$/SchoolAssistant/src/main/res/layout/activity_schedule.xml" />
+        <option value="$PROJECT_DIR$/SchoolAssistant/src/main/res/layout/class_dialog.xml" />
+        <option value="$PROJECT_DIR$/SchoolAssistant/src/main/res/layout/activity_main.xml" />
         <option value="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/activities/MainActivity.java" />
       </list>
     </option>
@@ -276,6 +526,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -419,7 +670,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -439,9 +689,10 @@
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="AVD_for_Nexus_4_by_Google" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="MemberChooser.showClasses" value="true" />
+    <property name="FullScreen" value="false" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -453,24 +704,6 @@
     </key>
   </component>
   <component name="RunManager" selected="Android Application.SchoolAssistant">
-    <configuration default="false" name="SchoolAssistant" type="AndroidRunConfigurationType" factoryName="Android Application" temporary="true">
-      <module name="SchoolAssistant-SchoolAssistant" />
-      <option name="ACTIVITY_CLASS" value="io.github.mabdrabo.schoolassistant.activities.CoursesActivity" />
-      <option name="MODE" value="default_activity" />
-      <option name="DEPLOY" value="true" />
-      <option name="TARGET_SELECTION_MODE" value="USB_DEVICE" />
-      <option name="PREFERRED_AVD" value="" />
-      <option name="USE_COMMAND_LINE" value="true" />
-      <option name="COMMAND_LINE" value="" />
-      <option name="WIPE_USER_DATA" value="false" />
-      <option name="DISABLE_BOOT_ANIMATION" value="false" />
-      <option name="NETWORK_SPEED" value="full" />
-      <option name="NETWORK_LATENCY" value="none" />
-      <option name="CLEAR_LOGCAT" value="true" />
-      <RunnerSettings RunnerId="AndroidDebugRunner" />
-      <ConfigurationWrapper RunnerId="AndroidDebugRunner" />
-      <method />
-    </configuration>
     <configuration default="false" name="SchoolAssistant" type="AndroidRunConfigurationType" factoryName="Android Application" temporary="true">
       <module name="SchoolAssistant-SchoolAssistant" />
       <option name="ACTIVITY_CLASS" value="io.github.mabdrabo.schoolassistant.activities.CoursesActivity" />
@@ -606,9 +839,8 @@
       <option name="CLEAR_LOGCAT" value="false" />
       <method />
     </configuration>
-    <list size="2">
+    <list size="1">
       <item index="0" class="java.lang.String" itemvalue="Android Application.SchoolAssistant" />
-      <item index="1" class="java.lang.String" itemvalue="Android Application.SchoolAssistant" />
     </list>
     <recent_temporary>
       <list size="1">
@@ -668,57 +900,57 @@
     <frame x="0" y="22" width="1280" height="747" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3006483" sideWeight="0.67145133" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34764993" sideWeight="0.67145133" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32854864" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24959481" sideWeight="0.4274322" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24959481" sideWeight="0.4274322" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32854864" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Android" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.46272284" sideWeight="0.67145133" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2949757" sideWeight="0.67145133" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32820097" sideWeight="0.67145133" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32854864" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
     </layout>
     <layout-to-restore>
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2949757" sideWeight="0.67145133" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2949757" sideWeight="0.67145133" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32820097" sideWeight="0.67145133" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32820097" sideWeight="0.67145133" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3006483" sideWeight="0.67145133" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34764993" sideWeight="0.67145133" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32854864" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24959481" sideWeight="0.4274322" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24959481" sideWeight="0.4274322" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32854864" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.46272284" sideWeight="0.67145133" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.46272284" sideWeight="0.67145133" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -745,47 +977,16 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/database/DatabaseHandler.java">
+    <entry file="file://$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/objects/Project.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="36" selection-start="2507" selection-end="2507" vertical-scroll-proportion="0.0" vertical-offset="811" max-vertical-offset="1410">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SchoolAssistant/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="40" selection-start="999" selection-end="999" vertical-scroll-proportion="0.4965157" vertical-offset="201" max-vertical-offset="882">
-          <folding>
-            <element signature="e#427#445#0" expanded="false" />
-            <element signature="e#583#601#0" expanded="false" />
-            <element signature="e#926#958#0" expanded="false" />
-            <element signature="e#1290#1321#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SchoolAssistant/src/main/res/menu/course.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="34" selection-start="856" selection-end="856" vertical-scroll-proportion="0.72621036" vertical-offset="0" max-vertical-offset="599">
-          <folding>
-            <element signature="e#406#434#0" expanded="true" />
-            <element signature="e#670#692#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SchoolAssistant/src/main/res/menu/courses.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="40" selection-start="374" selection-end="374" vertical-scroll-proportion="0.25041735" vertical-offset="0" max-vertical-offset="599">
+        <state line="5" column="13" selection-start="107" selection-end="107" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="975">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SchoolAssistant/src/main/res/layout/activity_courses.xml">
+    <entry file="file://$PROJECT_DIR$/SchoolAssistant/src/main/res/layout/add_note_dialog.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="13" selection-start="498" selection-end="498" vertical-scroll-proportion="0.28846154" vertical-offset="0" max-vertical-offset="572">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="825">
           <folding />
         </state>
       </provider>
@@ -793,62 +994,29 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SchoolAssistant/src/main/res/layout/add_course_dialog.xml">
+    <entry file="file://$PROJECT_DIR$/SchoolAssistant/src/main/res/layout/add_quiz_dialog.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="8" selection-start="639" selection-end="663" vertical-scroll-proportion="0.36713287" vertical-offset="0" max-vertical-offset="810">
+        <state line="16" column="12" selection-start="631" selection-end="716" vertical-scroll-proportion="-8.888889" vertical-offset="0" max-vertical-offset="1245">
           <folding />
         </state>
       </provider>
       <provider editor-type-id="android-designer">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/objects/Course.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="0" selection-start="516" selection-end="516" vertical-scroll-proportion="0.7996661" vertical-offset="16" max-vertical-offset="615">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/activities/CoursesActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="104" column="30" selection-start="3450" selection-end="3450" vertical-scroll-proportion="0.0" vertical-offset="285" max-vertical-offset="1649">
+        <state line="85" column="0" selection-start="2577" selection-end="2577" vertical-scroll-proportion="0.3327645" vertical-offset="645" max-vertical-offset="1410">
           <folding>
-            <element signature="e#1334#1701#0" expanded="true" />
-            <element signature="e#1690#1691#0" expanded="true" />
             <element signature="method#setupActionBar#0;class#CoursesActivity#0" expanded="false" />
             <element signature="method#onCreateOptionsMenu#0;class#CoursesActivity#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SchoolAssistant/build/source/r/debug/io/github/mabdrabo/schoolassistant/R.java">
+    <entry file="file://$PROJECT_DIR$/SchoolAssistant/src/main/res/layout/add_project_dialog.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="32" selection-start="1792" selection-end="1792" vertical-scroll-proportion="0.3466899" vertical-offset="281" max-vertical-offset="1485">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/objects/Section.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="15" selection-start="298" selection-end="298" vertical-scroll-proportion="0.0" vertical-offset="64" max-vertical-offset="1140">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/database/SectionTableHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="42" selection-start="2532" selection-end="2532" vertical-scroll-proportion="0.0" vertical-offset="904" max-vertical-offset="1770">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3399#3408#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SchoolAssistant/src/main/res/layout/add_class_dialog.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="0" selection-start="2676" selection-end="2676" vertical-scroll-proportion="-11.185185" vertical-offset="763" max-vertical-offset="1350">
+        <state line="99" column="0" selection-start="4302" selection-end="4302" vertical-scroll-proportion="-23.407408" vertical-offset="853" max-vertical-offset="1785">
           <folding />
         </state>
       </provider>
@@ -856,24 +1024,7 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/database/CourseTableHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="98" column="37" selection-start="3288" selection-end="3288" vertical-scroll-proportion="0.0" vertical-offset="1254" max-vertical-offset="1845">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2804#2812#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/activities/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="22" selection-start="1746" selection-end="1746" vertical-scroll-proportion="0.0" vertical-offset="164" max-vertical-offset="795">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SchoolAssistant/src/main/res/layout/activity_course.xml">
+    <entry file="file://$PROJECT_DIR$/SchoolAssistant/src/main/res/layout/activity_courses.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="572">
           <folding />
@@ -883,20 +1034,107 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/activities/CourseActivity.java">
+    <entry file="file://$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/database/ProjectTableHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="39" selection-start="1604" selection-end="1604" vertical-scroll-proportion="-0.68948245" vertical-offset="1212" max-vertical-offset="2363">
+        <state line="64" column="47" selection-start="2365" selection-end="2365" vertical-scroll-proportion="0.0" vertical-offset="931" max-vertical-offset="1695">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3363#3371#0" expanded="true" />
-            <element signature="e#3803#3811#0" expanded="true" />
-            <element signature="e#3880#3902#0" expanded="true" />
+            <element signature="e#3344#3353#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/database/SectionTableHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="41" selection-start="1767" selection-end="1767" vertical-scroll-proportion="0.5955631" vertical-offset="341" max-vertical-offset="1665">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/database/DatabaseHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="83" column="30" selection-start="3128" selection-end="3128" vertical-scroll-proportion="0.3572621" vertical-offset="866" max-vertical-offset="2190">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/activities/CourseActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="281" column="27" selection-start="11493" selection-end="11493" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="885">
+          <folding>
+            <element signature="method#onCreate#0;class#CourseActivity#0" expanded="false" />
+            <element signature="docComment;method#setupActionBar#0;class#CourseActivity#0" expanded="false" />
+            <element signature="method#setupActionBar#0;class#CourseActivity#0" expanded="false" />
+            <element signature="method#onCreateOptionsMenu#0;class#CourseActivity#0" expanded="false" />
+            <element signature="method#onOptionsItemSelected#0;class#CourseActivity#0" expanded="false" />
+            <element signature="method#onResume#0;class#CourseActivity#0" expanded="false" />
             <element signature="method#addSection#0;class#CourseActivity#0" expanded="false" />
-            <element signature="e#4788#4796#0" expanded="true" />
-            <element signature="e#5297#5305#0" expanded="true" />
-            <element signature="e#5720#5728#0" expanded="true" />
-            <element signature="e#6185#7023#0" expanded="true" />
-            <element signature="e#7012#7013#0" expanded="true" />
+            <element signature="method#addNote#0;class#CourseActivity#0" expanded="false" />
+            <element signature="method#addAssignment#0;class#CourseActivity#0" expanded="false" />
+            <element signature="method#addQuiz#0;class#CourseActivity#0" expanded="false" />
+            <element signature="e#12037#12573#0" expanded="true" />
+            <element signature="e#12562#12563#0" expanded="true" />
+            <element signature="method#addProject#0;class#CourseActivity#0" expanded="false" />
+            <element signature="e#13190#13915#0" expanded="true" />
+            <element signature="e#13904#13905#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/objects/Section.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="61" column="15" selection-start="1135" selection-end="1135" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1140">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SchoolAssistant/src/main/res/layout/class_dialog.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="0" selection-start="2115" selection-end="2115" vertical-scroll-proportion="-0.15384616" vertical-offset="868" max-vertical-offset="1440">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SchoolAssistant/src/main/res/layout/activity_schedule.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="44" selection-start="907" selection-end="907" vertical-scroll-proportion="0.5506993" vertical-offset="0" max-vertical-offset="572">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SchoolAssistant/src/main/res/layout/activity_main.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="86" column="50" selection-start="3097" selection-end="3118" vertical-scroll-proportion="-15.074074" vertical-offset="883" max-vertical-offset="1455">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SchoolAssistant/src/main/res/layout/add_class_dialog.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="82" column="46" selection-start="3054" selection-end="3054" vertical-scroll-proportion="-18.407408" vertical-offset="733" max-vertical-offset="1380">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/activities/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="103" column="8" selection-start="3490" selection-end="3490" vertical-scroll-proportion="0.94991654" vertical-offset="211" max-vertical-offset="915">
+          <folding>
+            <element signature="method#onClickCoursesButton#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#onClickScheduleButton#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#3141#3149#0" expanded="true" />
           </folding>
         </state>
       </provider>
