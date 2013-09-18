@@ -74,21 +74,15 @@
             <file
                 path="/Users/mahmoud/Documents/workspace_android/SchoolAssistant/SchoolAssistant/src/main/res/values/strings.xml"
                 qualifiers="" >
-                <string name="title_section1" >Section 1
-                </string>
                 <string name="action_settings" >Settings
                 </string>
-                <string name="title_section3" >Section 3
-                </string>
                 <string name="title_activity_courses" >Courses
-                </string>
-                <string name="title_section2" >Section 2
                 </string>
                 <string name="title_activity_course" >Course
                 </string>
                 <string name="app_name" >School Assistant
                 </string>
-                <string name="hello_world" >Hello world!
+                <string name="title_activity_assignments" >Assignments
                 </string>
             </file>
             <file
@@ -181,6 +175,16 @@
                 path="/Users/mahmoud/Documents/workspace_android/SchoolAssistant/SchoolAssistant/src/main/res/layout/activity_schedule.xml"
                 qualifiers=""
                 type="layout" />
+            <file
+                name="activity_assignments"
+                path="/Users/mahmoud/Documents/workspace_android/SchoolAssistant/SchoolAssistant/src/main/res/layout/activity_assignments.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="assignments"
+                path="/Users/mahmoud/Documents/workspace_android/SchoolAssistant/SchoolAssistant/src/main/res/menu/assignments.xml"
+                qualifiers=""
+                type="menu" />
         </source>
         <source path="/Users/mahmoud/Documents/workspace_android/SchoolAssistant/SchoolAssistant/build/res/rs/debug" />
     </dataSet>

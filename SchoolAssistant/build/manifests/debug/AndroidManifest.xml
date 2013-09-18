@@ -16,6 +16,9 @@
         <activity android:label="@string/title_activity_course" android:name="io.github.mabdrabo.schoolassistant.activities.CourseActivity" android:parentActivityName=".activities.CoursesActivity">
             <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".activities.CoursesActivity"/>
         </activity>
+        <activity android:label="@string/title_activity_assignments" android:name="io.github.mabdrabo.schoolassistant.activities.AssignmentsActivity" android:parentActivityName=".activities.MainActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".activities.MainActivity"/>
+        </activity>
     </application>
 
 </manifest>

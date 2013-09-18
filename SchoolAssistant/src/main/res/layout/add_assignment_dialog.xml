@@ -5,7 +5,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    android:layout_width="match_parent" android:layout_height="match_parent">
+    android:layout_width="match_parent" android:layout_height="wrap_content">
 
     <TextView
         android:layout_width="wrap_content"
@@ -55,11 +55,27 @@
         android:layout_below="@+id/textView3"
         android:layout_centerHorizontal="true" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/textView4"
+        android:text="Deadline"
+        android:layout_below="@+id/AssignmentNotesEditText" />
+
+    <DatePicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/datePicker"
+        android:layout_below="@+id/textView4"
+        android:calendarViewShown="false"/>
+
     <Button
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
         android:text="Add"
         android:id="@+id/addAssignmentButton"
-        android:layout_below="@+id/AssignmentNotesEditText" />
+        android:layout_below="@+id/datePicker" />
 
 </RelativeLayout>

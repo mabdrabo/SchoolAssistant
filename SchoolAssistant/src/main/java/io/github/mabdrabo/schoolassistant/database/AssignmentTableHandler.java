@@ -43,6 +43,7 @@ public class AssignmentTableHandler {
         values.put(KEY_COURSE_ID, assignment.get_courseId()); // assignment Course Id
         values.put(KEY_DESCRIPTION, assignment.get_description()); // assignment description
         values.put(KEY_DATE, assignment.get_dueDate()); // assignment deadline date
+        values.put(KEY_NOTE, assignment.get_notes()); // assignment notes
 
         // Inserting Row
         db.insert(TABLE_ASSIGNMENT, null, values);

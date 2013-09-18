@@ -10,6 +10,7 @@ import android.widget.GridView;
 import android.widget.ListView;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 
 import io.github.mabdrabo.schoolassistant.R;
 import io.github.mabdrabo.schoolassistant.database.DatabaseHandler;
@@ -23,12 +24,16 @@ public class MainActivity extends Activity {
     public static String[] SLOT_START_TIME = new String[]{"8:30", "10:30", "12:15", "2:15", "4:00"};
     public static DatabaseHandler database;
 
+    public static ArrayList<Course> courses;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         database = new DatabaseHandler(this);
+        courses = new ArrayList<Course>();
+        courses = MainActivity.database.getAllCourses();
     }
 
 
@@ -89,11 +94,17 @@ public class MainActivity extends Activity {
     }
 
     public void onClickTodayButton(View view) {
+        Calendar calendar = Calendar.getInstance();
+        int day_month = calendar.get(Calendar.DAY_OF_MONTH);
+        int day_week = calendar.get(Calendar.DAY_OF_WEEK);
+        int month = calendar.get(Calendar.MONTH);
+        int year = calendar.get(Calendar.YEAR);
 
     }
 
     public void onClickAssignmentsButton(View view) {
-
+        Intent intent = new Intent().setClass(this, AssignmentsActivity.class);
+        startActivity(intent);
     }
 
     public void onClickQuizzesButton(View view) {
@@ -101,6 +112,12 @@ public class MainActivity extends Activity {
     }
 
     public void onClickProjectsButton(View view) {
-        
+
+    }
+
+    public static int[] getDate(long millis) {
+        Calendar calendar = Calendar.getInstance();
+        calendar.setTimeInMillis(millis);
+        return new int[] {calendar.get(Calendar.YEAR), calendar.get(Calendar.MONTH), calendar.get(Calendar.DAY_OF_MONTH)};
     }
 }

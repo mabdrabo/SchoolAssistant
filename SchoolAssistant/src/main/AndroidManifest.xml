@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="io.github.mabdrabo.schoolassistant"
     android:versionCode="1"
-    android:versionName="1.0">
+    android:versionName="1.0" >
 
     <uses-sdk
         android:minSdkVersion="14"
@@ -12,10 +12,10 @@
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme" >
         <activity
-            android:name=".activities.MainActivity"
-            android:label="@string/app_name">
+            android:name="io.github.mabdrabo.schoolassistant.activities.MainActivity"
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -23,20 +23,28 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activities.CoursesActivity"
+            android:name="io.github.mabdrabo.schoolassistant.activities.CoursesActivity"
             android:label="@string/title_activity_courses"
-            android:parentActivityName=".activities.MainActivity">
+            android:parentActivityName=".activities.MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".activities.MainActivity" />
         </activity>
         <activity
-            android:name=".activities.CourseActivity"
+            android:name="io.github.mabdrabo.schoolassistant.activities.CourseActivity"
             android:label="@string/title_activity_course"
-            android:parentActivityName=".activities.CoursesActivity">
+            android:parentActivityName=".activities.CoursesActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".activities.CoursesActivity" />
+        </activity>
+        <activity
+            android:name="io.github.mabdrabo.schoolassistant.activities.AssignmentsActivity"
+            android:label="@string/title_activity_assignments"
+            android:parentActivityName=".activities.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.MainActivity" />
         </activity>
     </application>
 

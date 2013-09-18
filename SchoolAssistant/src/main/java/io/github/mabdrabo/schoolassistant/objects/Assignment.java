@@ -14,6 +14,7 @@ public class Assignment {
 
     public Assignment(String _description) {
         this._description = _description;
+        this._notes = "";
     }
 
 

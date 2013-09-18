@@ -9,6 +9,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.ExpandableListView;
 import android.widget.Spinner;
@@ -16,6 +17,7 @@ import android.widget.TextView;
 import android.widget.TimePicker;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.HashMap;
 import java.util.List;
 
@@ -31,7 +33,6 @@ import io.github.mabdrabo.schoolassistant.objects.Section;
 public class CourseActivity extends Activity {
 
     Course course;
-    ArrayList<Course> courses;
     int selected_course_id;
     int courseSpinnerDefaultPosition;
 
@@ -137,6 +138,8 @@ public class CourseActivity extends Activity {
         ArrayList<String> course_assignments_string = new ArrayList<String>();
         for (Assignment assignment : course_assignments) {
             String info =  assignment.get_description();
+            int[] deadline = MainActivity.getDate(assignment.get_dueDate());
+            info += " " + deadline[2] + "/" + deadline[1] + "/" + deadline[0];
             course_assignments_string.add(info);
         }
 
@@ -165,11 +168,10 @@ public class CourseActivity extends Activity {
 
         courseNameTextView.setText(course.get_name());
 
-        courses = MainActivity.database.getAllCourses();
         ArrayList<String> courses_names = new ArrayList<String>();
         courseSpinnerDefaultPosition = 0;
         boolean flag = false;
-        for (Course course : courses) {
+        for (Course course : MainActivity.courses) {
             courses_names.add(course.get_name());
             if (course.get_id() == this.course.get_id())
                 flag = true;
@@ -208,7 +210,7 @@ public class CourseActivity extends Activity {
         addSectionButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                int course_id = courses.get(courseSpinner.getSelectedItemPosition()).get_id();
+                int course_id = MainActivity.courses.get(courseSpinner.getSelectedItemPosition()).get_id();
                 String place = "" + ((EditText) addSectionDialog.findViewById(R.id.placeEditText)).getText();
                 int day = daySpinner.getSelectedItemPosition();  // 0 is Saturday
                 int time = timeSpinner.getSelectedItemPosition();  // 0 is 8:30
@@ -239,7 +241,7 @@ public class CourseActivity extends Activity {
         addNoteButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                int course_id = courses.get(courseSpinner.getSelectedItemPosition()).get_id();
+                int course_id = MainActivity.courses.get(courseSpinner.getSelectedItemPosition()).get_id();
                 String content = "" + ((EditText) addNoteDialog.findViewById(R.id.NoteEditText)).getText();
                 Note note = new Note(content);
                 note.set_courseId(course_id);
@@ -265,12 +267,18 @@ public class CourseActivity extends Activity {
         addAssignmentButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                int course_id = courses.get(courseSpinner.getSelectedItemPosition()).get_id();
+                int course_id = MainActivity.courses.get(courseSpinner.getSelectedItemPosition()).get_id();
                 String description = "" + ((EditText) addAssignmentDialog.findViewById(R.id.AssignmentEditText)).getText();
                 String notes = "" + ((EditText) addAssignmentDialog.findViewById(R.id.AssignmentNotesEditText)).getText();
+                DatePicker datePicker = (DatePicker) addAssignmentDialog.findViewById(R.id.datePicker);
+                Calendar calendar = Calendar.getInstance();
+                calendar.set(datePicker.getYear(), datePicker.getMonth(), datePicker.getDayOfMonth());
+                long deadline = calendar.getTimeInMillis();
+
                 Assignment assignment = new Assignment(description);
                 assignment.set_courseId(course_id);
                 assignment.set_notes(notes);
+                assignment.set_dueDate(deadline);
 
                 MainActivity.database.addAssignment(assignment);
                 addAssignmentDialog.dismiss();
@@ -293,10 +301,16 @@ public class CourseActivity extends Activity {
         addQuizButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                int course_id = courses.get(courseSpinner.getSelectedItemPosition()).get_id();
+                int course_id = MainActivity.courses.get(courseSpinner.getSelectedItemPosition()).get_id();
                 String place = "" + ((EditText) addQuizDialog.findViewById(R.id.QuizPlaceEditText)).getText();
+                DatePicker datePicker = (DatePicker) addQuizDialog.findViewById(R.id.datePicker);
+                Calendar calendar = Calendar.getInstance();
+                calendar.set(datePicker.getYear(), datePicker.getMonth(), datePicker.getDayOfMonth());
+                long date = calendar.getTimeInMillis();
+
                 Quiz quiz = new Quiz(place);
                 quiz.set_courseId(course_id);
+                quiz.set_date(date);
 
                 MainActivity.database.addQuiz(quiz);
                 addQuizDialog.dismiss();
@@ -319,7 +333,7 @@ public class CourseActivity extends Activity {
         addProjectButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                int course_id = courses.get(courseSpinner.getSelectedItemPosition()).get_id();
+                int course_id = MainActivity.courses.get(courseSpinner.getSelectedItemPosition()).get_id();
                 String title  = "" + ((EditText) addProjectDialog.findViewById(R.id.projectTitleEditText)).getText();
 //                String note = "" + ((EditText) addProjectDialog.findViewById(R.id.projectNotesEditText)).getText();
                 Project project = new Project(title);

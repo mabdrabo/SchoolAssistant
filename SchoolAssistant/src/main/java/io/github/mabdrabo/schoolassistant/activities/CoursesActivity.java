@@ -22,7 +22,7 @@ import io.github.mabdrabo.schoolassistant.objects.Course;
 
 public class CoursesActivity extends Activity {
 
-    ArrayList<Course> courses;
+
     ArrayList<HashMap<String, String>> coursesList;
     ListView coursesListView;
 
@@ -34,7 +34,6 @@ public class CoursesActivity extends Activity {
         // Show the Up button in the action bar.
         setupActionBar();
 
-        courses = new ArrayList<Course>();
         coursesList = new ArrayList<HashMap<String, String>>();
         coursesListView = ((ListView) findViewById(R.id.coursesListView));
         final Intent intent = new Intent().setClass(this, CourseActivity.class);
@@ -42,7 +41,7 @@ public class CoursesActivity extends Activity {
         coursesListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                int selected_course_id = courses.get(position).get_id();
+                int selected_course_id = MainActivity.courses.get(position).get_id();
                 intent.putExtra("selected_course_id", selected_course_id);
                 startActivity(intent);
             }
@@ -83,9 +82,8 @@ public class CoursesActivity extends Activity {
     @Override
     protected void onResume() {
         super.onResume();
-        courses = MainActivity.database.getAllCourses();
         coursesList = new ArrayList<HashMap<String, String>>();
-        for (Course course : courses) {
+        for (Course course : MainActivity.courses) {
             HashMap<String, String> datum = new HashMap<String, String>(2);
             datum.put("main", course.get_name());
 //            datum.put("sub", );
@@ -113,6 +111,7 @@ public class CoursesActivity extends Activity {
                 Course course = new Course(name);
                 MainActivity.database.addCourse(course);
                 addCourseDialog.dismiss();
+                MainActivity.courses = MainActivity.database.getAllCourses();
                 onResume();
             }
         });

@@ -25,10 +25,21 @@ tmp/**/*
 *.bak
 *.swp
 *~.nib
-local.properties
 .classpath
+.project
 .settings/
 .loadpath
+
+# Android Studio
+/*/local.properties
+/*/out
+*/local.properties
+*/out
+/*/*/build
+*/build
+/*/*/production
+*/production
+*~
 
 # External tool builders
 .externalToolBuilders/

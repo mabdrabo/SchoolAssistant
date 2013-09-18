@@ -10,10 +10,88 @@
     tools:context=".MainActivity">
 
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Schedule"
+                android:id="@+id/scheduleButton"
+                android:onClick="onClickScheduleButton" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Quizzes"
+                android:id="@+id/quizzesButton"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:onClick="onClickQuizzesButton" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Tomorrow"
+                android:id="@+id/tomorrowButton"
+                android:onClick="onClickTomorrowButton" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Assignments"
+                android:id="@+id/assignmentsButton"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:onClick="onClickAssignmentsButton" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Courses"
+                android:id="@+id/coursesButton"
+                android:layout_row="0"
+                android:layout_column="2"
+                android:onClick="onClickCoursesButton" />
+
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Projects"
+                android:id="@+id/projectsButton"
+                android:layout_row="1"
+                android:layout_column="2"
+                android:onClick="onClickProjectsButton" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
+        android:paddingTop="@dimen/activity_vertical_margin"
         android:text="Upcoming"
         android:id="@+id/textView"
         android:layout_gravity="left" />
@@ -22,71 +100,6 @@
         android:id="@+id/upcomingListView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
-
-
-    <GridLayout
-        android:columnCount="3"
-        android:rowCount="2"
-        android:layout_marginTop="@dimen/activity_vertical_margin"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="   Schedule    "
-            android:id="@+id/scheduleButton"
-            android:layout_row="0"
-            android:layout_column="0"
-            android:onClick="onClickScheduleButton" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text=" Today  "
-            android:id="@+id/todayButton"
-            android:layout_row="0"
-            android:layout_column="1"
-            android:onClick="onClickTodayButton" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Courses"
-            android:id="@+id/coursesButton"
-            android:layout_row="0"
-            android:layout_column="2"
-            android:onClick="onClickCoursesButton" />
-
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Assignments"
-            android:id="@+id/assignmentsButton"
-            android:layout_row="1"
-            android:layout_column="0"
-            android:onClick="onClickAssignmentsButton" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Quizzes"
-            android:id="@+id/quizzesButton"
-            android:layout_row="1"
-            android:layout_column="1"
-            android:onClick="onClickQuizzesButton" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Projects"
-            android:id="@+id/projectsButton"
-            android:layout_row="1"
-            android:layout_column="2"
-            android:onClick="onClickProjectsButton" />
-
-    </GridLayout>
 
 </LinearLayout>
 <!-- From: file:/Users/mahmoud/Documents/workspace_android/SchoolAssistant/SchoolAssistant/src/main/res/layout/activity_main.xml -->
