@@ -2,9 +2,7 @@
 <project version="4">
   <component name="AndroidLayoutPreviewToolWindow">
     <option name="state">
-      <GlobalState>
-        <option name="visible" value="false" />
-      </GlobalState>
+      <GlobalState />
     </option>
   </component>
   <component name="AndroidLayouts">
@@ -14,26 +12,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f248c8b8-af67-4859-a2c1-e9a8a1beaf95" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/activities/AssignmentsActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SchoolAssistant/src/main/res/layout/activity_assignments.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SchoolAssistant/src/main/res/menu/assignments.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SchoolAssistant/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/SchoolAssistant/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/objects/Assignment.java" afterPath="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/objects/Assignment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/database/AssignmentTableHandler.java" afterPath="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/database/AssignmentTableHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/activities/CourseActivity.java" afterPath="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/activities/CourseActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/activities/CoursesActivity.java" afterPath="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/activities/CoursesActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/activities/MainActivity.java" afterPath="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/activities/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SchoolAssistant/build/source/r/debug/io/github/mabdrabo/schoolassistant/R.java" afterPath="$PROJECT_DIR$/SchoolAssistant/build/source/r/debug/io/github/mabdrabo/schoolassistant/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SchoolAssistant/SchoolAssistant-SchoolAssistant.iml" afterPath="$PROJECT_DIR$/SchoolAssistant/SchoolAssistant-SchoolAssistant.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SchoolAssistant/build/res/all/debug/layout/activity_main.xml" afterPath="$PROJECT_DIR$/SchoolAssistant/build/res/all/debug/layout/activity_main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SchoolAssistant/src/main/res/layout/activity_main.xml" afterPath="$PROJECT_DIR$/SchoolAssistant/src/main/res/layout/activity_main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SchoolAssistant/build/res/all/debug/layout/activity_schedule.xml" afterPath="$PROJECT_DIR$/SchoolAssistant/build/res/all/debug/layout/activity_schedule.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SchoolAssistant/build/res/all/debug/layout/add_assignment_dialog.xml" afterPath="$PROJECT_DIR$/SchoolAssistant/build/res/all/debug/layout/add_assignment_dialog.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SchoolAssistant/src/main/res/layout/add_assignment_dialog.xml" afterPath="$PROJECT_DIR$/SchoolAssistant/src/main/res/layout/add_assignment_dialog.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SchoolAssistant/build/res/all/debug/layout/class_dialog.xml" afterPath="$PROJECT_DIR$/SchoolAssistant/build/res/all/debug/layout/class_dialog.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SchoolAssistant/src/main/res/layout/class_dialog.xml" afterPath="$PROJECT_DIR$/SchoolAssistant/src/main/res/layout/class_dialog.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SchoolAssistant/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/SchoolAssistant/src/main/res/values/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SchoolAssistant/build/res/all/debug/values/values.xml" afterPath="$PROJECT_DIR$/SchoolAssistant/build/res/all/debug/values/values.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SchoolAssistant/src/main/res/layout/assignment_dialog.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="SchoolAssistant.iws" />
@@ -146,7 +125,7 @@
       <file leaf-file-name="add_assignment_dialog.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SchoolAssistant/src/main/res/layout/add_assignment_dialog.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="69" column="43" selection-start="2618" selection-end="2618" vertical-scroll-proportion="-12.111111" vertical-offset="708" max-vertical-offset="1290">
+            <state line="21" column="51" selection-start="910" selection-end="910" vertical-scroll-proportion="14.925926" vertical-offset="718" max-vertical-offset="1290">
               <folding />
             </state>
           </provider>
@@ -155,10 +134,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="add_quiz_dialog.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SchoolAssistant/src/main/res/layout/add_quiz_dialog.xml">
+      <file leaf-file-name="assignment_dialog.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/SchoolAssistant/src/main/res/layout/assignment_dialog.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="12" selection-start="2384" selection-end="2651" vertical-scroll-proportion="-7.296296" vertical-offset="673" max-vertical-offset="1245">
+            <state line="17" column="0" selection-start="769" selection-end="769" vertical-scroll-proportion="0.23951049" vertical-offset="118" max-vertical-offset="690">
               <folding />
             </state>
           </provider>
@@ -167,10 +146,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AssignmentsActivity.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="AssignmentsActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/activities/AssignmentsActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="115" column="47" selection-start="4833" selection-end="4833" vertical-scroll-proportion="0.8430034" vertical-offset="1201" max-vertical-offset="1980">
+            <state line="125" column="0" selection-start="5046" selection-end="5046" vertical-scroll-proportion="0.0" vertical-offset="1394" max-vertical-offset="1980">
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1492#1500#0" expanded="true" />
@@ -540,7 +519,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/SchoolAssistant/src/main/res/layout/add_class_dialog.xml" />
         <option value="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/database/SectionTableHandler.java" />
         <option value="$PROJECT_DIR$/SchoolAssistant/src/main/res/layout/activity_schedule.xml" />
         <option value="$PROJECT_DIR$/SchoolAssistant/src/main/res/values/strings.xml" />
@@ -556,6 +534,7 @@
         <option value="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/objects/Assignment.java" />
         <option value="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/activities/CourseActivity.java" />
         <option value="$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/activities/AssignmentsActivity.java" />
+        <option value="$PROJECT_DIR$/SchoolAssistant/src/main/res/layout/assignment_dialog.xml" />
       </list>
     </option>
   </component>
@@ -972,7 +951,7 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34764993" sideWeight="0.67145133" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34764993" sideWeight="0.67145133" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -988,7 +967,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2949757" sideWeight="0.67145133" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32820097" sideWeight="0.67145133" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32820097" sideWeight="0.67145133" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -1046,13 +1025,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/SchoolAssistant/src/main/res/menu/courses.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="244" selection-end="374" vertical-scroll-proportion="0.15025042" vertical-offset="0" max-vertical-offset="599">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SchoolAssistant/src/main/res/menu/assignments.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="25" selection-start="273" selection-end="294" vertical-scroll-proportion="0.2003339" vertical-offset="0" max-vertical-offset="599">
@@ -1160,34 +1132,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SchoolAssistant/src/main/res/layout/add_assignment_dialog.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="43" selection-start="2618" selection-end="2618" vertical-scroll-proportion="-12.111111" vertical-offset="708" max-vertical-offset="1290">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SchoolAssistant/src/main/res/layout/add_quiz_dialog.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="12" selection-start="2384" selection-end="2651" vertical-scroll-proportion="-7.296296" vertical-offset="673" max-vertical-offset="1245">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SchoolAssistant/src/main/java/io/github/mabdrabo/schoolassistant/activities/AssignmentsActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="115" column="47" selection-start="4833" selection-end="4833" vertical-scroll-proportion="0.8430034" vertical-offset="1201" max-vertical-offset="1980">
+        <state line="125" column="0" selection-start="5046" selection-end="5046" vertical-scroll-proportion="0.0" vertical-offset="1394" max-vertical-offset="1980">
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1492#1500#0" expanded="true" />
           </folding>
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SchoolAssistant/src/main/res/layout/add_quiz_dialog.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="0" selection-start="2022" selection-end="2022" vertical-scroll-proportion="0.108391605" vertical-offset="673" max-vertical-offset="1245">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SchoolAssistant/src/main/res/layout/add_assignment_dialog.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="51" selection-start="910" selection-end="910" vertical-scroll-proportion="14.925926" vertical-offset="718" max-vertical-offset="1290">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SchoolAssistant/src/main/res/layout/assignment_dialog.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="0" selection-start="769" selection-end="769" vertical-scroll-proportion="0.23951049" vertical-offset="118" max-vertical-offset="690">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
   </component>
