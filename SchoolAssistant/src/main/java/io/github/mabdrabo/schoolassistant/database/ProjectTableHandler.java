@@ -104,4 +104,10 @@ public class ProjectTableHandler {
         }
         return courseList;
     }
+
+    public static void delete(Project project) {
+        SQLiteDatabase db = dbHandler.getReadableDatabase();
+        db.delete(TABLE_PROJECTS, KEY_ID + "=" + project.get_id(), null);
+        db.close();
+    }
 }

@@ -6,5 +6,8 @@
     <string name="title_activity_courses">Courses</string>
     <string name="title_activity_course">Course</string>
     <string name="title_activity_assignments">Assignments</string>
+    <string name="title_activity_projects">Projects</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_quizzes">Quizzes</string>
 
 </resources>

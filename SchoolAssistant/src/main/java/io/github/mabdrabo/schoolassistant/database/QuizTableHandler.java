@@ -98,4 +98,10 @@ public class QuizTableHandler {
         }
         return quizList;
     }
+
+    public static void delete(Quiz quiz) {
+        SQLiteDatabase db = dbHandler.getReadableDatabase();
+        db.delete(TABLE_QUIZ, KEY_ID + "=" + quiz.get_id(), null);
+        db.close();
+    }
 }

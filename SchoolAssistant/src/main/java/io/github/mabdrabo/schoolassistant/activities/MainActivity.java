@@ -26,6 +26,8 @@ public class MainActivity extends Activity {
 
     public static ArrayList<Course> courses;
 
+    private static boolean delete_dialog_response;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -52,13 +54,8 @@ public class MainActivity extends Activity {
     }
 
 
-    public void onClickCoursesButton(View view) {
-        Intent intent = new Intent().setClass(this, CoursesActivity.class);
-        startActivity(intent);
-    }
-
     public void onClickScheduleButton(View view) {
-        setContentView(R.layout.activity_schedule);
+        setContentView(R.layout.activity_schedul);
         GridView gridView = (GridView) findViewById(R.id.gridView);
 
         String[] classes_names = new String[42];
@@ -93,7 +90,7 @@ public class MainActivity extends Activity {
         gridView.setAdapter(xadapter);
     }
 
-    public void onClickTodayButton(View view) {
+    public void onClickTomorrowButton(View view) {
         Calendar calendar = Calendar.getInstance();
         int day_month = calendar.get(Calendar.DAY_OF_MONTH);
         int day_week = calendar.get(Calendar.DAY_OF_WEEK);
@@ -102,22 +99,41 @@ public class MainActivity extends Activity {
 
     }
 
+    public void onClickCoursesButton(View view) {
+        Intent intent = new Intent().setClass(this, CoursesActivity.class);
+        startActivity(intent);
+    }
+
     public void onClickAssignmentsButton(View view) {
         Intent intent = new Intent().setClass(this, AssignmentsActivity.class);
         startActivity(intent);
     }
 
     public void onClickQuizzesButton(View view) {
-
+        Intent intent = new Intent().setClass(this, QuizzesActivity.class);
+        startActivity(intent);
     }
 
     public void onClickProjectsButton(View view) {
-
+        Intent intent = new Intent().setClass(this, ProjectsActivity.class);
+        startActivity(intent);
     }
 
-    public static int[] getDate(long millis) {
+    public static Calendar getDate(long millis) {
         Calendar calendar = Calendar.getInstance();
         calendar.setTimeInMillis(millis);
-        return new int[] {calendar.get(Calendar.YEAR), calendar.get(Calendar.MONTH), calendar.get(Calendar.DAY_OF_MONTH)};
+        return calendar;
+    }
+
+    public static int get_course_spinner_position(int course_id) {
+        boolean flag = false;
+        int courseSpinnerDefaultPosition = 0;
+        for (Course course : MainActivity.courses) {
+            if (course.get_id() == course_id)
+                flag = true;
+            else if (!flag)
+                courseSpinnerDefaultPosition++;
+        }
+        return courseSpinnerDefaultPosition;
     }
 }

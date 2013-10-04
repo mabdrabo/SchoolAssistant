@@ -3,7 +3,7 @@
     <uses-sdk android:minSdkVersion="7" android:targetSdkVersion="16"/>
 
     <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:theme="@style/AppTheme">
-        <activity android:label="@string/app_name" android:name="io.github.mabdrabo.schoolassistant.activities.MainActivity">
+        <activity android:configChanges="orientation|keyboardHidden" android:label="@string/app_name" android:name="io.github.mabdrabo.schoolassistant.activities.MainActivity" android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
@@ -17,6 +17,12 @@
             <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".activities.CoursesActivity"/>
         </activity>
         <activity android:label="@string/title_activity_assignments" android:name="io.github.mabdrabo.schoolassistant.activities.AssignmentsActivity" android:parentActivityName=".activities.MainActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".activities.MainActivity"/>
+        </activity>
+        <activity android:label="@string/title_activity_projects" android:name="io.github.mabdrabo.schoolassistant.activities.ProjectsActivity" android:parentActivityName=".activities.MainActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".activities.MainActivity"/>
+        </activity>
+        <activity android:label="@string/title_activity_quizzes" android:name="io.github.mabdrabo.schoolassistant.activities.QuizzesActivity" android:parentActivityName=".activities.MainActivity">
             <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".activities.MainActivity"/>
         </activity>
     </application>

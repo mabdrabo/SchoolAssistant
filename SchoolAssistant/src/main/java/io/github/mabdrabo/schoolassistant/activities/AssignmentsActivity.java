@@ -1,12 +1,15 @@
 package io.github.mabdrabo.schoolassistant.activities;
 
+import android.app.AlertDialog;
 import android.app.Dialog;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.app.Activity;
 import android.support.v4.app.NavUtils;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.DatePicker;
@@ -14,6 +17,7 @@ import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 import android.widget.Spinner;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -27,6 +31,7 @@ public class AssignmentsActivity extends Activity {
     ArrayList<Assignment> assignments;
     ArrayList<HashMap<String, String>> assignmentsList;
     ListView assignmentsListView;
+    Assignment selectedAssignment;
 
     ArrayAdapter<String> courseSpinnerAdapter;
 
@@ -52,7 +57,7 @@ public class AssignmentsActivity extends Activity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.assignments, menu);
+        getMenuInflater().inflate(R.menu.master, menu);
         return true;
     }
 
@@ -62,8 +67,8 @@ public class AssignmentsActivity extends Activity {
             case android.R.id.home:
                 NavUtils.navigateUpFromSameTask(this);
                 return true;
-            case R.id.action_add_assignment:
-                addAssignment();
+            case R.id.action_add:
+                add();
                 return true;
         }
         return super.onOptionsItemSelected(item);
@@ -86,9 +91,16 @@ public class AssignmentsActivity extends Activity {
                 new String[]{"main", "sub"},
                 new int[]{android.R.id.text1, android.R.id.text2});
         assignmentsListView.setAdapter(adapter);
+        assignmentsListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Assignment assignment = assignments.get(position);
+                view(assignment);
+            }
+        });
     }
 
-    private void addAssignment() {
+    private void add() {
         final Dialog addAssignmentDialog = new Dialog(this);
         addAssignmentDialog.setTitle("Add Assignment");
         addAssignmentDialog.setContentView(R.layout.add_assignment_dialog);
@@ -122,8 +134,88 @@ public class AssignmentsActivity extends Activity {
         });
     }
 
-    private void viewAssignment() {
+    private void view(Assignment assignment) {
+        selectedAssignment = assignment;
+        final Dialog assignmentDialog = new Dialog(this);
+        assignmentDialog.setTitle("Assignment");
+        assignmentDialog.setContentView(R.layout.assignment_dialog);
 
+        ((TextView) assignmentDialog.findViewById(R.id.courseTextView)).setText("" + MainActivity.database.getCourse(selectedAssignment.get_courseId()).get_name());
+        ((TextView) assignmentDialog.findViewById(R.id.descriptionTextView)).setText("" + selectedAssignment.get_description());
+        ((TextView) assignmentDialog.findViewById(R.id.notesTextView)).setText("" + selectedAssignment.get_notes());
+
+        assignmentDialog.show();
+
+        assignmentDialog.findViewById(R.id.editButton).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                edit();
+            }
+        });
+
+        assignmentDialog.findViewById(R.id.deleteButton).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                delete();
+            }
+        });
     }
-    
+
+    private void edit() {
+        final Dialog editAssignmentDialog = new Dialog(this);
+        editAssignmentDialog.setTitle("Edit Assignment");
+        editAssignmentDialog.setContentView(R.layout.add_assignment_dialog);
+        editAssignmentDialog.show();
+
+        final Spinner courseSpinner = (Spinner) editAssignmentDialog.findViewById(R.id.courseSpinner);
+        courseSpinner.setAdapter(courseSpinnerAdapter);
+        courseSpinner.setSelection(MainActivity.get_course_spinner_position(selectedAssignment.get_courseId()));
+
+        ((EditText) editAssignmentDialog.findViewById(R.id.projectTitleEditText)).setText(selectedAssignment.get_description());
+        ((EditText) editAssignmentDialog.findViewById(R.id.projectNotesEditText)).setText(selectedAssignment.get_notes());
+
+        Button addAssignmentButton = (Button) editAssignmentDialog.findViewById(R.id.addAssignmentButton);
+        addAssignmentButton.setText("Update");
+        addAssignmentButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                int course_id = MainActivity.courses.get(courseSpinner.getSelectedItemPosition()).get_id();
+                String description = "" + ((EditText) editAssignmentDialog.findViewById(R.id.AssignmentEditText)).getText();
+                String notes = "" + ((EditText) editAssignmentDialog.findViewById(R.id.AssignmentNotesEditText)).getText();
+                DatePicker datePicker = (DatePicker) editAssignmentDialog.findViewById(R.id.datePicker);
+                Calendar calendar = Calendar.getInstance();
+                calendar.set(datePicker.getYear(), datePicker.getMonth(), datePicker.getDayOfMonth());
+                long deadline = calendar.getTimeInMillis();
+
+                Assignment assignment = new Assignment(description);
+                assignment.set_courseId(course_id);
+                assignment.set_notes(notes);
+                assignment.set_dueDate(deadline);
+
+                MainActivity.database.addAssignment(assignment);
+                editAssignmentDialog.dismiss();
+                onResume();
+            }
+        });
+    }
+
+    private void delete() {
+        new AlertDialog.Builder(this)
+                .setTitle("Delete")
+                .setMessage("Are you sure you want to delete?")
+                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+                        MainActivity.database.deleteAssignment(selectedAssignment);
+                        dialog.dismiss();
+                        onResume();
+                    }
+                })
+                .setNegativeButton("No", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.dismiss();
+                    }
+                })
+                .show();
+    }
+
 }

@@ -21,11 +21,21 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Deadline"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:id="@+id/dateTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/courseTextView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Description"
         android:layout_marginTop="@dimen/activity_vertical_margin"
         android:id="@+id/descriptionTextView"
         android:layout_centerHorizontal="true"
-        android:layout_below="@id/courseTextView" />
+        android:layout_below="@id/dateTextView" />
 
 
     <TextView
@@ -37,5 +47,30 @@
         android:id="@+id/notesTextView"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/descriptionTextView" />
+
+    <LinearLayout android:id="@+id/linearLayout"
+        android:layout_below="@+id/notesTextView"
+        android:layout_width="match_parent"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Edit"
+            android:id="@+id/editButton" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Delete"
+            android:id="@+id/deleteButton" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cancel"
+            android:id="@+id/cancelButton" />
+    </LinearLayout>
 
 </RelativeLayout>

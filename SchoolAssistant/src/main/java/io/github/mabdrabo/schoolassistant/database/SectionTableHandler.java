@@ -108,4 +108,10 @@ public class SectionTableHandler {
         }
         return sectionList;
     }
+
+    public static void delete(Section section) {
+        SQLiteDatabase db = dbHandler.getReadableDatabase();
+        db.delete(TABLE_SECTIONS, KEY_ID + "=" + section.get_id(), null);
+        db.close();
+    }
 }

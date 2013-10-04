@@ -102,4 +102,9 @@ public class NoteTableHandler {
         return noteList;
     }
 
+    public static void delete(Note note) {
+        SQLiteDatabase db = dbHandler.getReadableDatabase();
+        db.delete(TABLE_NOTES, KEY_ID + "=" + note.get_id(), null);
+        db.close();
+    }
 }

@@ -103,4 +103,11 @@ public class AssignmentTableHandler {
         }
         return assignmentList;
     }
+
+
+    public static void delete(Assignment assignment) {
+        SQLiteDatabase db = dbHandler.getReadableDatabase();
+        db.delete(TABLE_ASSIGNMENT, KEY_ID + "=" + assignment.get_id(), null);
+        db.close();
+    }
 }

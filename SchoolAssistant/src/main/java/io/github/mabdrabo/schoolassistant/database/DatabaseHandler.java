@@ -77,6 +77,24 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     public ArrayList<Course> getAllCourses() {
         return CourseTableHandler.getAll();
     }
+
+    public void deleteCourse(Course course) {
+        CourseTableHandler.delete(course);
+        for (Section section : getCourseSections(course.get_id()))
+            deleteSection(section);
+        for (Assignment assignment : getCourseAssignments(course.get_id()))
+            deleteAssignment(assignment);
+        for (Project project : getCourseProjects(course.get_id()))
+            deleteProject(project);
+        for (Quiz quiz : getCourseQuizzes(course.get_id()))
+            deleteQuiz(quiz);
+        for (Note note : getCourseNotes(course.get_id()))
+            deleteNote(note);
+    }
+
+    public void updateCourse(Course course) {
+        CourseTableHandler.update(course);
+    }
     //////////////////////////////////////
 
     // SECTIONS //
@@ -90,6 +108,14 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 
     public ArrayList<Section> getAllSections() {
         return SectionTableHandler.getAll(-1);
+    }
+
+    public void deleteSection(Section section) {
+        SectionTableHandler.delete(section);
+    }
+
+    public void updateSection(Section section) {
+        SectionTableHandler.update(section);
     }
     ///////////////////////////////////////
 
@@ -105,6 +131,14 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     public ArrayList<Note> getAllNotes() {
         return NoteTableHandler.getAll(-1);
     }
+
+    public void deleteNote(Note note) {
+        NoteTableHandler.delete(note);
+    }
+
+    public void updateNote(Note note) {
+        NoteTableHandler.update(note);
+    }
     ///////////////////////////////////////
 
     // ASSIGNMENTS //
@@ -119,6 +153,14 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     public ArrayList<Assignment> getAllAssignments() {
         return AssignmentTableHandler.getAll(-1);
     }
+
+    public void deleteAssignment(Assignment assignment) {
+        AssignmentTableHandler.delete(assignment);
+    }
+
+    public void updateAssignment(Assignment assignment) {
+        AssignmentTableHandler.update(assignment);
+    }
     ///////////////////////////////////////
 
     // QUIZZES //
@@ -130,8 +172,16 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         return QuizTableHandler.getAll(course_id);
     }
 
-    public ArrayList<Quiz> getAllQuizzes(int course_id) {
+    public ArrayList<Quiz> getAllQuizzes() {
         return QuizTableHandler.getAll(-1);
+    }
+
+    public void deleteQuiz(Quiz quiz) {
+        QuizTableHandler.delete(quiz);
+    }
+
+    public void updateQuiz(Quiz quiz) {
+        QuizTableHandler.update(quiz);
     }
     ///////////////////////////////////////
 
@@ -146,6 +196,14 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 
     public ArrayList<Project> getAllProjects() {
         return ProjectTableHandler.getAll(-1);
+    }
+
+    public void deleteProject(Project project) {
+        ProjectTableHandler.delete(project);
+    }
+
+    public void updateProject(Project project) {
+        ProjectTableHandler.update(project);
     }
     ///////////////////////////////////////
 }

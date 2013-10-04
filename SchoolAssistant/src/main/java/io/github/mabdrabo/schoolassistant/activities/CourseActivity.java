@@ -18,6 +18,7 @@ import android.widget.TimePicker;
 
 import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.Formatter;
 import java.util.HashMap;
 import java.util.List;
 
@@ -34,7 +35,6 @@ public class CourseActivity extends Activity {
 
     Course course;
     int selected_course_id;
-    int courseSpinnerDefaultPosition;
 
     ArrayList<Section> course_sections;
     ArrayList<Note> course_notes;
@@ -138,8 +138,9 @@ public class CourseActivity extends Activity {
         ArrayList<String> course_assignments_string = new ArrayList<String>();
         for (Assignment assignment : course_assignments) {
             String info =  assignment.get_description();
-            int[] deadline = MainActivity.getDate(assignment.get_dueDate());
-            info += " " + deadline[2] + "/" + deadline[1] + "/" + deadline[0];
+            Formatter formatter = new Formatter();
+            info += "" + formatter.format("%tF", MainActivity.getDate(assignment.get_dueDate()));
+            formatter.close();
             course_assignments_string.add(info);
         }
 
@@ -169,15 +170,9 @@ public class CourseActivity extends Activity {
         courseNameTextView.setText(course.get_name());
 
         ArrayList<String> courses_names = new ArrayList<String>();
-        courseSpinnerDefaultPosition = 0;
-        boolean flag = false;
-        for (Course course : MainActivity.courses) {
+        for (Course course : MainActivity.courses)
             courses_names.add(course.get_name());
-            if (course.get_id() == this.course.get_id())
-                flag = true;
-            else if (!flag)
-                courseSpinnerDefaultPosition++;
-        }
+
         courseSpinnerAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, courses_names);
         courseSpinnerAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
@@ -198,7 +193,7 @@ public class CourseActivity extends Activity {
 
         final Spinner courseSpinner = (Spinner) addSectionDialog.findViewById(R.id.courseSpinner);
         courseSpinner.setAdapter(courseSpinnerAdapter);
-        courseSpinner.setSelection(courseSpinnerDefaultPosition);
+        courseSpinner.setSelection(MainActivity.get_course_spinner_position(selected_course_id));
 
         final Spinner daySpinner = (Spinner) addSectionDialog.findViewById(R.id.daySpinner);
         daySpinner.setAdapter(daySpinnerAdapter);
@@ -235,7 +230,7 @@ public class CourseActivity extends Activity {
 
         final Spinner courseSpinner = (Spinner) addNoteDialog.findViewById(R.id.courseSpinner);
         courseSpinner.setAdapter(courseSpinnerAdapter);
-        courseSpinner.setSelection(courseSpinnerDefaultPosition);
+        courseSpinner.setSelection(MainActivity.get_course_spinner_position(selected_course_id));
 
         Button addNoteButton = (Button) addNoteDialog.findViewById(R.id.addNoteButton);
         addNoteButton.setOnClickListener(new View.OnClickListener() {
@@ -261,7 +256,7 @@ public class CourseActivity extends Activity {
 
         final Spinner courseSpinner = (Spinner) addAssignmentDialog.findViewById(R.id.courseSpinner);
         courseSpinner.setAdapter(courseSpinnerAdapter);
-        courseSpinner.setSelection(courseSpinnerDefaultPosition);
+        courseSpinner.setSelection(MainActivity.get_course_spinner_position(selected_course_id));
 
         Button addAssignmentButton = (Button) addAssignmentDialog.findViewById(R.id.addAssignmentButton);
         addAssignmentButton.setOnClickListener(new View.OnClickListener() {
@@ -295,7 +290,7 @@ public class CourseActivity extends Activity {
 
         final Spinner courseSpinner = (Spinner) addQuizDialog.findViewById(R.id.courseSpinner);
         courseSpinner.setAdapter(courseSpinnerAdapter);
-        courseSpinner.setSelection(courseSpinnerDefaultPosition);
+        courseSpinner.setSelection(MainActivity.get_course_spinner_position(selected_course_id));
 
         Button addQuizButton = (Button) addQuizDialog.findViewById(R.id.addQuizButton);
         addQuizButton.setOnClickListener(new View.OnClickListener() {
@@ -310,6 +305,7 @@ public class CourseActivity extends Activity {
 
                 Quiz quiz = new Quiz(place);
                 quiz.set_courseId(course_id);
+                quiz.set_place(place);
                 quiz.set_date(date);
 
                 MainActivity.database.addQuiz(quiz);
@@ -327,7 +323,7 @@ public class CourseActivity extends Activity {
 
         final Spinner courseSpinner = (Spinner) addProjectDialog.findViewById(R.id.courseSpinner);
         courseSpinner.setAdapter(courseSpinnerAdapter);
-        courseSpinner.setSelection(courseSpinnerDefaultPosition);
+        courseSpinner.setSelection(MainActivity.get_course_spinner_position(selected_course_id));
 
         Button addProjectButton = (Button) addProjectDialog.findViewById(R.id.addProjectButton);
         addProjectButton.setOnClickListener(new View.OnClickListener() {
@@ -335,10 +331,10 @@ public class CourseActivity extends Activity {
             public void onClick(View v) {
                 int course_id = MainActivity.courses.get(courseSpinner.getSelectedItemPosition()).get_id();
                 String title  = "" + ((EditText) addProjectDialog.findViewById(R.id.projectTitleEditText)).getText();
-//                String note = "" + ((EditText) addProjectDialog.findViewById(R.id.projectNotesEditText)).getText();
+                String note = "" + ((EditText) addProjectDialog.findViewById(R.id.projectNotesEditText)).getText();
                 Project project = new Project(title);
                 project.set_courseId(course_id);
-//                project.set_notes(note);
+                project.set_notes(note);
 
                 MainActivity.database.addProject(project);
                 addProjectDialog.dismiss();
