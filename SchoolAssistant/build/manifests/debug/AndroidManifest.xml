@@ -25,6 +25,13 @@
         <activity android:label="@string/title_activity_quizzes" android:name="io.github.mabdrabo.schoolassistant.activities.QuizzesActivity" android:parentActivityName=".activities.MainActivity">
             <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".activities.MainActivity"/>
         </activity>
+        <activity android:label="@string/title_activity_schedule" android:name="io.github.mabdrabo.schoolassistant.activities.ScheduleActivity" android:screenOrientation="landscape">
+            android:parentActivityName=".activities.MainActivity" &gt;
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".activities.MainActivity"/>
+        </activity>
+        <activity android:label="@string/title_activity_settings" android:name="io.github.mabdrabo.schoolassistant.activities.SettingsActivity" android:parentActivityName=".activities.MainActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".activities.MainActivity"/>
+        </activity>
     </application>
 
 </manifest>

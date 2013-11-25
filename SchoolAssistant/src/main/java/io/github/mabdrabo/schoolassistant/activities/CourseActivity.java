@@ -14,7 +14,6 @@ import android.widget.EditText;
 import android.widget.ExpandableListView;
 import android.widget.Spinner;
 import android.widget.TextView;
-import android.widget.TimePicker;
 
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -33,7 +32,7 @@ import io.github.mabdrabo.schoolassistant.objects.Section;
 
 public class CourseActivity extends Activity {
 
-    Course course;
+    Course selected_course;
     int selected_course_id;
 
     ArrayList<Section> course_sections;
@@ -61,7 +60,7 @@ public class CourseActivity extends Activity {
 
         Bundle extras = getIntent().getExtras();
         selected_course_id = extras.getInt("selected_course_id");
-        course = MainActivity.database.getCourse(selected_course_id);
+        selected_course = MainActivity.database.getCourse(selected_course_id);
     }
 
     /**
@@ -101,6 +100,9 @@ public class CourseActivity extends Activity {
                 return true;
             case R.id.action_add_project:
                 addProject();
+                return true;
+            case R.id.action_edit:
+                editCourse();
                 return true;
         }
         return super.onOptionsItemSelected(item);
@@ -167,7 +169,7 @@ public class CourseActivity extends Activity {
         ExpandableListAdapter listAdapter = new ExpandableListAdapter(this, listDataHeader, listDataChild);
         courseExpandableListView.setAdapter(listAdapter);
 
-        courseNameTextView.setText(course.get_name());
+        courseNameTextView.setText(selected_course.get_name());
 
         ArrayList<String> courses_names = new ArrayList<String>();
         for (Course course : MainActivity.courses)
@@ -184,6 +186,27 @@ public class CourseActivity extends Activity {
 
     }
 
+    private void editCourse() {
+        final Dialog editCourseDialog = new Dialog(this);
+        editCourseDialog.setTitle("Edit Course");
+        editCourseDialog.setContentView(R.layout.add_course_dialog);
+        editCourseDialog.show();
+
+        ((EditText) editCourseDialog.findViewById(R.id.courseNameEditText)).setText(selected_course.get_name());
+
+        Button editCourseButton = (Button) editCourseDialog.findViewById(R.id.addCourseButton);
+        editCourseButton.setText("Update");
+        editCourseButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Course new_course = new Course("" + ((EditText) editCourseDialog.findViewById(R.id.courseNameEditText)).getText());
+                new_course.set_id(selected_course.get_id());
+                MainActivity.database.updateCourse(new_course);
+                editCourseDialog.dismiss();
+                onResume();
+            }
+        });
+    }
 
     private void addSection() {
         final Dialog addSectionDialog = new Dialog(this);

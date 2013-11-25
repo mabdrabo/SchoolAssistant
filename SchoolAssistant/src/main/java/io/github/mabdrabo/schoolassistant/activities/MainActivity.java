@@ -26,7 +26,6 @@ public class MainActivity extends Activity {
 
     public static ArrayList<Course> courses;
 
-    private static boolean delete_dialog_response;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,39 +54,8 @@ public class MainActivity extends Activity {
 
 
     public void onClickScheduleButton(View view) {
-        setContentView(R.layout.activity_schedul);
-        GridView gridView = (GridView) findViewById(R.id.gridView);
-
-        String[] classes_names = new String[42];
-        int classes_names_counter = 0;
-        classes_names[classes_names_counter++] = " ";
-
-        for (int i=0; i<5; i++)
-            classes_names[classes_names_counter++] = SLOT_START_TIME[i];
-
-        ArrayList<Section> allClasses = MainActivity.database.getAllSections();
-        String[][] day_class = new String[6][5];
-        for (Section section : allClasses) {
-            day_class[section.get_day()][section.get_time()] = MainActivity.database.getCourse(section.get_courseId()).get_name();
-            day_class[section.get_day()][section.get_time()] += " " + section.get_place();
-        }
-
-        for (int i=0; i<6; i++) {
-            classes_names[classes_names_counter++] = DAY_OF_WEEK_SHORT[i];
-            for (int j=0; j<5; j++) {
-                if (day_class[i][j] != null)
-                    classes_names[classes_names_counter++] = day_class[i][j];
-                else
-                    classes_names[classes_names_counter++] = "free";
-            }
-        }
-
-        for (int i=0; i<42; i++)
-            if (classes_names[i] == null)
-                classes_names[i] = "x";
-
-        ArrayAdapter<String> xadapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, classes_names);
-        gridView.setAdapter(xadapter);
+        Intent intent = new Intent().setClass(this, ScheduleActivity.class);
+        startActivity(intent);
     }
 
     public void onClickTomorrowButton(View view) {

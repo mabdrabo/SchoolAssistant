@@ -3,6 +3,7 @@ package io.github.mabdrabo.schoolassistant.activities;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.app.Activity;
 import android.support.v4.app.NavUtils;
@@ -18,6 +19,7 @@ import android.widget.ListView;
 import android.widget.SimpleAdapter;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.TimePicker;
 
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -73,6 +75,9 @@ public class QuizzesActivity extends Activity {
                 return true;
             case R.id.action_add:
                 add();
+                return true;
+            case R.id.action_settings:
+                startActivity(new Intent().setClass(this, SettingsActivity.class));
                 return true;
         }
         return super.onOptionsItemSelected(item);
@@ -192,11 +197,13 @@ public class QuizzesActivity extends Activity {
                 int course_id = MainActivity.courses.get(courseSpinner.getSelectedItemPosition()).get_id();
                 String place = "" + ((EditText) editQuizDialog.findViewById(R.id.QuizPlaceEditText)).getText();
                 DatePicker datePicker = (DatePicker) editQuizDialog.findViewById(R.id.datePicker);
+                TimePicker timePicker = (TimePicker) editQuizDialog.findViewById(R.id.timePicker);
                 Calendar calendar = Calendar.getInstance();
-                calendar.set(datePicker.getYear(), datePicker.getMonth(), datePicker.getDayOfMonth());
+                calendar.set(datePicker.getYear(), datePicker.getMonth(), datePicker.getDayOfMonth(), timePicker.getCurrentHour(), timePicker.getCurrentMinute());
                 long date = calendar.getTimeInMillis();
 
                 Quiz quiz = new Quiz(place);
+                quiz.set_id(selectedQuiz.get_id());
                 quiz.set_courseId(course_id);
                 quiz.set_place(place);
                 quiz.set_date(date);

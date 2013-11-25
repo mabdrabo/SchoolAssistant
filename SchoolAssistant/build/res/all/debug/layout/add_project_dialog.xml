@@ -77,7 +77,7 @@
             <TimePicker
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/projectTimePicker"
+                android:id="@+id/timePicker"
                 android:layout_below="@+id/textView4" />
 
 
@@ -88,7 +88,7 @@
                 android:text="Date"
                 android:id="@+id/textView5"
                 android:paddingTop="8dp"
-                android:layout_below="@+id/projectTimePicker"
+                android:layout_below="@+id/timePicker"
                 android:layout_alignParentLeft="true" />
             <DatePicker
                 android:layout_width="wrap_content"

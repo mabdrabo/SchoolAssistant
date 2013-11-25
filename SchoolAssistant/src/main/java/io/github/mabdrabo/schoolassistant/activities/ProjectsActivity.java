@@ -3,6 +3,7 @@ package io.github.mabdrabo.schoolassistant.activities;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.app.Activity;
 import android.support.v4.app.NavUtils;
@@ -12,13 +13,17 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.TimePicker;
 
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Formatter;
 import java.util.HashMap;
 
 import io.github.mabdrabo.schoolassistant.R;
@@ -70,6 +75,9 @@ public class ProjectsActivity extends Activity {
             case R.id.action_add:
                 add();
                 return true;
+            case R.id.action_settings:
+                startActivity(new Intent().setClass(this, SettingsActivity.class));
+                return true;
         }
         return super.onOptionsItemSelected(item);
     }
@@ -117,6 +125,7 @@ public class ProjectsActivity extends Activity {
                 int course_id = MainActivity.courses.get(courseSpinner.getSelectedItemPosition()).get_id();
                 String title  = "" + ((EditText) addProjectDialog.findViewById(R.id.projectTitleEditText)).getText();
                 String note = "" + ((EditText) addProjectDialog.findViewById(R.id.projectNotesEditText)).getText();
+
                 Project project = new Project(title);
                 project.set_courseId(course_id);
                 project.set_notes(note);
@@ -136,6 +145,10 @@ public class ProjectsActivity extends Activity {
 
         ((TextView) projectDialog.findViewById(R.id.courseTextView)).setText("" + MainActivity.database.getCourse(selectedProject.get_courseId()).get_name());
         ((TextView) projectDialog.findViewById(R.id.titleTextView)).setText("" + selectedProject.get_title());
+        Formatter formatter = new Formatter();
+        String date = "" + formatter.format("%tF", MainActivity.getDate(selectedProject.get_dueDate()));
+        ((TextView) projectDialog.findViewById(R.id.dateTextView)).setText(date);
+        formatter.close();
         ((TextView) projectDialog.findViewById(R.id.notesTextView)).setText("" + selectedProject.get_notes());
 
         projectDialog.show();
@@ -176,8 +189,17 @@ public class ProjectsActivity extends Activity {
                 int course_id = MainActivity.courses.get(courseSpinner.getSelectedItemPosition()).get_id();
                 String title  = "" + ((EditText) editProjectDialog.findViewById(R.id.projectTitleEditText)).getText();
                 String note = "" + ((EditText) editProjectDialog.findViewById(R.id.projectNotesEditText)).getText();
+                DatePicker datePicker = (DatePicker) editProjectDialog.findViewById(R.id.datePicker);
+                TimePicker timePicker = (TimePicker) editProjectDialog.findViewById(R.id.timePicker);
+
+                Calendar calendar = Calendar.getInstance();
+                calendar.set(datePicker.getYear(), datePicker.getMonth(), datePicker.getDayOfMonth(), timePicker.getCurrentHour(), timePicker.getCurrentMinute());
+                long date = calendar.getTimeInMillis();
+
                 Project project = new Project(title);
+                project.set_id(selectedProject.get_id());
                 project.set_courseId(course_id);
+                project.set_dueDate(date);
                 project.set_notes(note);
 
                 MainActivity.database.updateProject(project);

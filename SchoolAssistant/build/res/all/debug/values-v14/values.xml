@@ -2,10 +2,14 @@
 <resources>
 
     <!-- From: file:/Users/mahmoud/Documents/workspace_android/SchoolAssistant/SchoolAssistant/src/main/res/values-v14/styles.xml -->
+    <eat-comment />
+
     <style name="AppBaseTheme" parent="android:Theme.Holo.Light.DarkActionBar">
         <!-- API 14 theme customizations can go here. -->
     </style>
     <!-- From: file:/Users/mahmoud/Documents/workspace_android/SchoolAssistant/SchoolAssistant/build/exploded-bundles/ComAndroidSupportAppcompatV71800.aar/res/values-v14/values.xml -->
+    <eat-comment />
+
     <style name="TextAppearance.AppCompat.Base.SearchResult.Subtitle" parent="@android:TextAppearance.Holo.SearchResult.Subtitle" />
 
     <style name="TextAppearance.AppCompat.Base.SearchResult.Title" parent="@android:TextAppearance.Holo.SearchResult.Title" />

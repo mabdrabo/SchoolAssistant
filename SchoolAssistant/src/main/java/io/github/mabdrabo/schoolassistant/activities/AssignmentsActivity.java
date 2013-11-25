@@ -3,6 +3,7 @@ package io.github.mabdrabo.schoolassistant.activities;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.app.Activity;
 import android.support.v4.app.NavUtils;
@@ -18,6 +19,7 @@ import android.widget.ListView;
 import android.widget.SimpleAdapter;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.TimePicker;
 
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -69,6 +71,9 @@ public class AssignmentsActivity extends Activity {
                 return true;
             case R.id.action_add:
                 add();
+                return true;
+            case R.id.action_settings:
+                startActivity(new Intent().setClass(this, SettingsActivity.class));
                 return true;
         }
         return super.onOptionsItemSelected(item);
@@ -171,8 +176,8 @@ public class AssignmentsActivity extends Activity {
         courseSpinner.setAdapter(courseSpinnerAdapter);
         courseSpinner.setSelection(MainActivity.get_course_spinner_position(selectedAssignment.get_courseId()));
 
-        ((EditText) editAssignmentDialog.findViewById(R.id.projectTitleEditText)).setText(selectedAssignment.get_description());
-        ((EditText) editAssignmentDialog.findViewById(R.id.projectNotesEditText)).setText(selectedAssignment.get_notes());
+        ((EditText) editAssignmentDialog.findViewById(R.id.AssignmentEditText)).setText(selectedAssignment.get_description());
+        ((EditText) editAssignmentDialog.findViewById(R.id.AssignmentNotesEditText)).setText(selectedAssignment.get_notes());
 
         Button addAssignmentButton = (Button) editAssignmentDialog.findViewById(R.id.addAssignmentButton);
         addAssignmentButton.setText("Update");
@@ -183,11 +188,14 @@ public class AssignmentsActivity extends Activity {
                 String description = "" + ((EditText) editAssignmentDialog.findViewById(R.id.AssignmentEditText)).getText();
                 String notes = "" + ((EditText) editAssignmentDialog.findViewById(R.id.AssignmentNotesEditText)).getText();
                 DatePicker datePicker = (DatePicker) editAssignmentDialog.findViewById(R.id.datePicker);
+                TimePicker timePicker = (TimePicker) editAssignmentDialog.findViewById(R.id.timePicker);
+
                 Calendar calendar = Calendar.getInstance();
-                calendar.set(datePicker.getYear(), datePicker.getMonth(), datePicker.getDayOfMonth());
+                calendar.set(datePicker.getYear(), datePicker.getMonth(), datePicker.getDayOfMonth(), timePicker.getCurrentHour(), timePicker.getCurrentMinute());
                 long deadline = calendar.getTimeInMillis();
 
                 Assignment assignment = new Assignment(description);
+                assignment.set_id(selectedAssignment.get_id());
                 assignment.set_courseId(course_id);
                 assignment.set_notes(notes);
                 assignment.set_dueDate(deadline);

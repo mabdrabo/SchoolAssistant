@@ -7,7 +7,7 @@
 
     <item
         android:id="@+id/action_add_section"
-        android:title="Add Section"
+        android:title="Add Class"
         android:showAsAction="never" />
 
     <item
@@ -28,6 +28,11 @@
     <item
         android:id="@+id/action_add_project"
         android:title="Add Project"
+        android:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_edit"
+        android:title="Edit Course"
         android:showAsAction="never" />
 </menu>
 <!-- From: file:/Users/mahmoud/Documents/workspace_android/SchoolAssistant/SchoolAssistant/src/main/res/menu/course.xml -->
